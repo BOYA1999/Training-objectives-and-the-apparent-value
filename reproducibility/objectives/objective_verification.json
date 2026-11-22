@@ -1,0 +1,15 @@
+{
+  "evaluated_utc": "2026-11-20T15:18:48.114261+00:00",
+  "archived_bootstrap_agreement_rows": 6,
+  "original_original_sha256": "f58d8c200eee998fa5cc3cd60e004d4ca9f56a09e1a37b2f4c17b6c0daf138c8",
+  "original_chemgpt_sha256": "5708bb3ec85ff465a7da1f5f61103f912feac8161f7d9badf878509db674c9c0",
+  "original_l2_sha256": "892da2783704b7fe8edd83a116ae72a75d1d2cf8813c93db05accbbeb63a0914",
+  "full_feature_sha256": "867485397e46d6f7ed9ff980577d43acfc28ecc2e9347192f3d9e9e591870916",
+  "raw_labels_sha256": "6551eba506c90cf51434bc1764424e928cfa19b45854148d692247b8eb49f74c",
+  "raw_labels_count": [
+    96,
+    612,
+    42
+  ],
+  "no_boundary_ties": true
+}

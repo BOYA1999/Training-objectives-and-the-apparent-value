@@ -1,0 +1,1547 @@
+{
+  "source_revision": "Local historical files from the 2026-11-20 project; no project commit is asserted. Exact source content is identified by original_sha256.",
+  "source_files": [
+    {
+      "path": "models_outputs/mol2mol_cpu.py",
+      "original_sha256": "fea24315b75b457dbccad2ab95eddafb6a9da9d4a8dcbd721e029f00b754c79b",
+      "published_sha256": "fea24315b75b457dbccad2ab95eddafb6a9da9d4a8dcbd721e029f00b754c79b",
+      "bytes": 2823,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "pathlib",
+        "rdkit",
+        "reinvent.models.transformer.core.dataset.dataset",
+        "reinvent.models.transformer.core.vocabulary",
+        "reinvent.models.transformer.mol2mol.mol2mol",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "cycle06_model/frozen_encoder.py",
+      "original_sha256": "00f5b17b2245886fb23b3c51f8ee7efbd2d358262eaa17c3a22889b0fb94a14a",
+      "published_sha256": "00f5b17b2245886fb23b3c51f8ee7efbd2d358262eaa17c3a22889b0fb94a14a",
+      "bytes": 4275,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "mol2mol_cpu",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "cycle07_model/frozen_chemgpt.py",
+      "original_sha256": "e2525831e7259c0097bff41524fbf9e814822f1493dc7229a459435e213bd44c",
+      "published_sha256": "e2525831e7259c0097bff41524fbf9e814822f1493dc7229a459435e213bd44c",
+      "bytes": 3958,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "hashlib",
+        "importlib.util",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit",
+        "sys",
+        "torch",
+        "transformers"
+      ]
+    },
+    {
+      "path": "cycle06/prepare.py",
+      "original_sha256": "5726fdf3b44170fae467c5007522cc4395905048b9c50099502e52b225861b72",
+      "published_sha256": "5726fdf3b44170fae467c5007522cc4395905048b9c50099502e52b225861b72",
+      "bytes": 3744,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit",
+        "rdkit.Chem.MolStandardize"
+      ]
+    },
+    {
+      "path": "cycle06/fit.py",
+      "original_sha256": "7c395400b04b44690274f625658c0709ef1bec5c48a9fe7d8d3b57152a13647c",
+      "published_sha256": "7c395400b04b44690274f625658c0709ef1bec5c48a9fe7d8d3b57152a13647c",
+      "bytes": 4866,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "argparse",
+        "frozen_encoder",
+        "hashlib",
+        "json",
+        "lightgbm",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit",
+        "rdkit.Chem",
+        "sklearn.ensemble",
+        "sklearn.svm",
+        "sys",
+        "time"
+      ]
+    },
+    {
+      "path": "cycle06/fit_continuous.py",
+      "original_sha256": "997f1b4be3fd848abec4669d06a8e0906429cfb437ede82297f0a45108b2672c",
+      "published_sha256": "997f1b4be3fd848abec4669d06a8e0906429cfb437ede82297f0a45108b2672c",
+      "bytes": 2892,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "argparse",
+        "fit",
+        "hashlib",
+        "json",
+        "pathlib",
+        "time"
+      ]
+    },
+    {
+      "path": "cycle06/evaluate.py",
+      "original_sha256": "614ae15df8d32d1094afb26b9208de1c5aab11a083994dab542ebf95e2beab58",
+      "published_sha256": "614ae15df8d32d1094afb26b9208de1c5aab11a083994dab542ebf95e2beab58",
+      "bytes": 3766,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit.Chem.Scaffolds",
+        "sklearn.metrics"
+      ]
+    },
+    {
+      "path": "cycle06/evaluate_continuous.py",
+      "original_sha256": "3f715294439cc18ecb689bd2946090acef6fa7b2cbe07149092dcf65a4f53c24",
+      "published_sha256": "3f715294439cc18ecb689bd2946090acef6fa7b2cbe07149092dcf65a4f53c24",
+      "bytes": 3378,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit.Chem.Scaffolds",
+        "sklearn.metrics"
+      ]
+    },
+    {
+      "path": "cycle07/run_chemgpt.py",
+      "original_sha256": "d55083ef2b5296e07714eca461956b316dbc444b7669910ff9a6b488d3521133",
+      "published_sha256": "d55083ef2b5296e07714eca461956b316dbc444b7669910ff9a6b488d3521133",
+      "bytes": 888,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "evaluate",
+        "evaluate_continuous",
+        "fit",
+        "fit_continuous",
+        "frozen_chemgpt",
+        "pathlib",
+        "shutil",
+        "sys"
+      ]
+    },
+    {
+      "path": "cycle09/fit_point_control.py",
+      "original_sha256": "3ba09524378018054ee56cb5f3c345906c197fd7b7adfa37d790782a03601cdc",
+      "published_sha256": "3ba09524378018054ee56cb5f3c345906c197fd7b7adfa37d790782a03601cdc",
+      "bytes": 2155,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "fit",
+        "frozen_chemgpt",
+        "hashlib",
+        "json",
+        "pathlib",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "path": "cycle09/evaluate_comparisons.py",
+      "original_sha256": "e3daddf809bf2729ce56c0dbf2fde4502f5992a311986ca159c6cf918c856751",
+      "published_sha256": "e3daddf809bf2729ce56c0dbf2fde4502f5992a311986ca159c6cf918c856751",
+      "bytes": 3347,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "hashlib",
+        "json",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "cycle09/bootstrap_primary.py",
+      "original_sha256": "cc7eb2cb13b0753144a4e721e3e18ea16635f457289a114ff34f6d8309617b84",
+      "published_sha256": "cc7eb2cb13b0753144a4e721e3e18ea16635f457289a114ff34f6d8309617b84",
+      "bytes": 2331,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "hashlib",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit.Chem.Scaffolds"
+      ]
+    },
+    {
+      "path": "paper_revision_20261120/feature_sampling/fit_full_features.py",
+      "original_sha256": "f52972e18a590ff2ae25c6755a1d04efdbcc40c594a1c33f68e28c021ea028c2",
+      "published_sha256": "06a076f46c250e5592b3ec89e01c1037372d30468439b875895edf2fc08352f4",
+      "bytes": 5636,
+      "adaptation": "Replace project-name-dependent read auditing with root-relative paths; preserve forbidden-label guard.",
+      "imports": [
+        "datetime",
+        "fit",
+        "frozen_chemgpt",
+        "hashlib",
+        "json",
+        "pathlib",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "paper_revision_20261120/feature_sampling/evaluate_locked.py",
+      "original_sha256": "14b596fe35cafc5f514bf1e9de13ea27800dabfd95bb75b720f3391d80eafa1a",
+      "published_sha256": "14b596fe35cafc5f514bf1e9de13ea27800dabfd95bb75b720f3391d80eafa1a",
+      "bytes": 4209,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "sys"
+      ]
+    },
+    {
+      "path": "paper_revision_round2/analyses/objectives/fit_seeds.py",
+      "original_sha256": "70a8d7b9ce043b8223c58fdecddcbfbcee6a265e34d8675464f1f1202c053a54",
+      "published_sha256": "a3056f29e3acaa7fd1bc6e03a6081ad7e023d557a106fda558ebcf9705f6bac1",
+      "bytes": 6334,
+      "adaptation": "Replace project-name-dependent read auditing with root-relative paths; preserve forbidden-label guard.",
+      "imports": [
+        "datetime",
+        "fit",
+        "frozen_chemgpt",
+        "hashlib",
+        "json",
+        "pathlib",
+        "re",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "paper_revision_round2/analyses/objectives/evaluate_objectives.py",
+      "original_sha256": "ee150d5442daa27566303b582ae65741571d92744373ea647d7b66a2f969181f",
+      "published_sha256": "ee150d5442daa27566303b582ae65741571d92744373ea647d7b66a2f969181f",
+      "bytes": 12114,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "datetime",
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit.Chem.Scaffolds",
+        "sys"
+      ]
+    },
+    {
+      "path": "cycle08_data/build_ncats_fixed_labels.py",
+      "original_sha256": "63bdba679da9da65be3eedc52ed417b4da7cd227e4a501083e44534fbac85172",
+      "published_sha256": "63bdba679da9da65be3eedc52ed417b4da7cd227e4a501083e44534fbac85172",
+      "bytes": 2800,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "numpy",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "cycle08_ncats/score.py",
+      "original_sha256": "936b33e77b4512adfeb04508a132a0de9cdf3a9108d878934608f3f28b8baaef",
+      "published_sha256": "936b33e77b4512adfeb04508a132a0de9cdf3a9108d878934608f3f28b8baaef",
+      "bytes": 2210,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "fit",
+        "fit_continuous",
+        "frozen_chemgpt",
+        "pandas",
+        "pathlib",
+        "prepare",
+        "rdkit",
+        "rdkit.Chem.MolStandardize",
+        "sys",
+        "torch"
+      ]
+    },
+    {
+      "path": "cycle08_ncats/evaluate.py",
+      "original_sha256": "38f9742c81ef045f144d32eb1a84a0fa68eb8781ef4bc715c8ade006d8bc312d",
+      "published_sha256": "38f9742c81ef045f144d32eb1a84a0fa68eb8781ef4bc715c8ade006d8bc312d",
+      "bytes": 3101,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit.Chem.Scaffolds"
+      ]
+    },
+    {
+      "path": "cycle08_independent/ncats_metric_sensitivity.py",
+      "original_sha256": "84c64f5f7472d174ff6e7e3b868b028dc56feb25fa8c7ed4c34cd10d8794ab7d",
+      "published_sha256": "9b7fd1ea1ce37c72b244d4728c4e550f9270a6756a49d70d63d9681d425fb4da",
+      "bytes": 4603,
+      "adaptation": "Record provenance paths relative to the scientific source root.",
+      "imports": [
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "cycle09/external/same_cohort_sensitivity.py",
+      "original_sha256": "4276b228a0f1ee53f376e8e137c34eb6239c3690be5f600908a7193d80d6e826",
+      "published_sha256": "492dcbbe072c02505e745d49e160f182ae5078addcca11463b28514592f6d00f",
+      "bytes": 5014,
+      "adaptation": "Record provenance paths relative to the scientific source root.",
+      "imports": [
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "cycle02/score_catalogue.py",
+      "original_sha256": "e008bdf9007b24ecee3b7ece41bcdac0da11a28a9bc109f76d2869ef25385dca",
+      "published_sha256": "e008bdf9007b24ecee3b7ece41bcdac0da11a28a9bc109f76d2869ef25385dca",
+      "bytes": 6557,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "argparse",
+        "hashlib",
+        "json",
+        "mol2mol_cpu",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit",
+        "rdkit.Chem",
+        "rdkit.Chem.MolStandardize",
+        "rdkit.Chem.Scaffolds",
+        "reinvent.models.transformer.core.dataset.paired_dataset",
+        "sys",
+        "time",
+        "torch"
+      ]
+    },
+    {
+      "path": "cycle02_data_b/prepare_pxr_labels.py",
+      "original_sha256": "28d4977b47d836dd437adc67582e874b7e73772812681d8c5fa0da74fd21417a",
+      "published_sha256": "28d4977b47d836dd437adc67582e874b7e73772812681d8c5fa0da74fd21417a",
+      "bytes": 2287,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "cycle03/neighbor_methods.py",
+      "original_sha256": "5d92d383152bd0006fc0daa9733572be6f01fc13d9047fcc43287f8a6b233c99",
+      "published_sha256": "5d92d383152bd0006fc0daa9733572be6f01fc13d9047fcc43287f8a6b233c99",
+      "bytes": 3752,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "hashlib",
+        "json",
+        "pathlib",
+        "scipy.stats",
+        "score_catalogue",
+        "sklearn.ensemble",
+        "sklearn.svm",
+        "sys"
+      ]
+    },
+    {
+      "path": "cycle03/score_pxr_neighbors.py",
+      "original_sha256": "afabe66400949abbdc609ca189dc53c62745704e6e96984839a6a1c1ee8620eb",
+      "published_sha256": "afabe66400949abbdc609ca189dc53c62745704e6e96984839a6a1c1ee8620eb",
+      "bytes": 1154,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "neighbor_methods",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "cycle03/evaluate_pxr_neighbors.py",
+      "original_sha256": "8e3c391eceef40263e212946600262ccf5f9f9892f65e990e821e8c104748405",
+      "published_sha256": "8e3c391eceef40263e212946600262ccf5f9f9892f65e990e821e8c104748405",
+      "bytes": 2888,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit.Chem.Scaffolds",
+        "sklearn.metrics"
+      ]
+    },
+    {
+      "path": "cycle03/audit_assay_rules.py",
+      "original_sha256": "2e74625198800c58cc0336ac08206f1e194e7c7d9c3bdde2e2dfde32c4bc1547",
+      "published_sha256": "2e74625198800c58cc0336ac08206f1e194e7c7d9c3bdde2e2dfde32c4bc1547",
+      "bytes": 1693,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "numpy",
+        "pandas",
+        "pathlib"
+      ]
+    },
+    {
+      "path": "cycle03/verify_endpoint_sensitivity.py",
+      "original_sha256": "0ba6bb405d163eabb6df7c427b0a27e217c306290e821d89223281b0db5569b1",
+      "published_sha256": "0ba6bb405d163eabb6df7c427b0a27e217c306290e821d89223281b0db5569b1",
+      "bytes": 1362,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "pandas",
+        "pathlib",
+        "sklearn.metrics"
+      ]
+    },
+    {
+      "path": "cycle05/evaluate_external.py",
+      "original_sha256": "5e22b1251e1351cae32439abd3cab34f3c9d82e4a97018bf170782668582cd43",
+      "published_sha256": "5e22b1251e1351cae32439abd3cab34f3c9d82e4a97018bf170782668582cd43",
+      "bytes": 2768,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "hashlib",
+        "itertools",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "rdkit",
+        "sklearn.metrics"
+      ]
+    },
+    {
+      "path": "cycle08_benchmark/evaluate_multiteam.py",
+      "original_sha256": "1582e55d34deaed243b91b117bc5ba4858bfa1894496419d5f063c1ada4327b4",
+      "published_sha256": "1582e55d34deaed243b91b117bc5ba4858bfa1894496419d5f063c1ada4327b4",
+      "bytes": 5417,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "functools",
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "official_custom_scoring_functions",
+        "pandas",
+        "pathlib",
+        "prepare",
+        "sys"
+      ]
+    },
+    {
+      "path": "cycle08_benchmark/compare_examples.py",
+      "original_sha256": "1228cebf9a9eeff4ddac6bf764582048e3b61cddaa6c50639150d58f534166c1",
+      "published_sha256": "1228cebf9a9eeff4ddac6bf764582048e3b61cddaa6c50639150d58f534166c1",
+      "bytes": 4600,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "hashlib",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib",
+        "prepare",
+        "rdkit.Chem.Scaffolds",
+        "sys"
+      ]
+    },
+    {
+      "path": "paper_revision_round2/analyses/archives/audit_archives.py",
+      "original_sha256": "e072ad09bb21f478aa0ed95a8202c1b14b7282d0306d5f2b39a34e62bf1dfb5c",
+      "published_sha256": "e072ad09bb21f478aa0ed95a8202c1b14b7282d0306d5f2b39a34e62bf1dfb5c",
+      "bytes": 5770,
+      "adaptation": "Unchanged original source bytes.",
+      "imports": [
+        "collections",
+        "hashlib",
+        "itertools",
+        "json",
+        "numpy",
+        "pandas",
+        "pathlib"
+      ]
+    }
+  ],
+  "external_dependencies": {
+    "cyp_data": {
+      "dataset": "https://huggingface.co/datasets/openadmet/cyp-challenge-train-test",
+      "dataset_doi": "10.57967/hf/11464",
+      "revision": "5ab9dd9daee4dd98840ad585455a2b5aa386f5d0",
+      "license": "apache-2.0",
+      "files": [
+        {
+          "file": "README.md",
+          "bytes": 7283,
+          "sha256": "30eae862610f409fbf4a85ecab4e8581a081f6423a861c3341604895da85ecdc",
+          "pinned_url": "https://huggingface.co/datasets/openadmet/cyp-challenge-train-test/resolve/5ab9dd9daee4dd98840ad585455a2b5aa386f5d0/README.md"
+        },
+        {
+          "file": "cyp-challenge-TRAIN_inhibition.csv",
+          "bytes": 653407,
+          "sha256": "b8f79addd266fb6f9f4c222c5e4e73d926362328b6a8d2841871a54e46bd2278",
+          "pinned_url": "https://huggingface.co/datasets/openadmet/cyp-challenge-train-test/resolve/5ab9dd9daee4dd98840ad585455a2b5aa386f5d0/cyp-challenge-TRAIN_inhibition.csv"
+        },
+        {
+          "file": "cyp-challenge-TEST-UNBLINDED_inhibition.csv",
+          "bytes": 181624,
+          "sha256": "6551eba506c90cf51434bc1764424e928cfa19b45854148d692247b8eb49f74c",
+          "pinned_url": "https://huggingface.co/datasets/openadmet/cyp-challenge-train-test/resolve/5ab9dd9daee4dd98840ad585455a2b5aa386f5d0/cyp-challenge-TEST-UNBLINDED_inhibition.csv"
+        },
+        {
+          "file": "cyp-challenge-TEST-BLINDED.csv",
+          "bytes": 44935,
+          "sha256": "a342f8444a8dcb531ca12f3685293f0bd6c36ae9073f491e44a9bc1cc4b741f9",
+          "pinned_url": "https://huggingface.co/datasets/openadmet/cyp-challenge-train-test/resolve/5ab9dd9daee4dd98840ad585455a2b5aa386f5d0/cyp-challenge-TEST-BLINDED.csv"
+        }
+      ]
+    },
+    "pxr_data": {
+      "url": "https://huggingface.co/datasets/openadmet/pxr-challenge-train-test",
+      "revision": "Not pinned in this release; compare the recorded input hashes. Prepared DRC tables are required intermediates."
+    },
+    "ncats_data": {
+      "assay": "AID 1645842",
+      "url": "https://pubchem.ncbi.nlm.nih.gov/bioassay/1645842",
+      "note": "Prepared replicate, standardized structure mapping and candidate CSVs are prerequisites; their construction is not reconstructed here."
+    },
+    "reinvent": {
+      "repository": "https://github.com/MolecularAI/REINVENT4",
+      "tree_sha": "0f075b349ed22015e0406350c6f426701bb0815d",
+      "expected_location": "models_outputs/reinvent_minimal/reinvent",
+      "source_files": [
+        {
+          "path": "LICENSE",
+          "git_blob_sha1": "53147b534d12c6a4ef951d603307a74f137ebdce",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/__init__.py",
+          "git_blob_sha1": "af9cdfa4da5a0b2e1cd625a1de3875b2975034ef",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/version.py",
+          "git_blob_sha1": "afa1e543b24e05af2ab41ed50a9af93ce4cb1fb6",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/conversions.py",
+          "git_blob_sha1": "3f40c27afb52fb8bf4b2d6b479b65c9e349f178d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/file_reader.py",
+          "git_blob_sha1": "74061c88c787ea46cbef56a16fd60d74943d6da4",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/similarity.py",
+          "git_blob_sha1": "90593924255d22febd8cd1f641204c669cb8eef6",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/tokens.py",
+          "git_blob_sha1": "8a62c082dd3eae9e2c6f60763808c3ce3c9a2d3d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/utils.py",
+          "git_blob_sha1": "b426e0e3734bd9dc2b4eccebc5c48ffcb7bbfcea",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/amino_acids/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/amino_acids/amino_acids.py",
+          "git_blob_sha1": "947baaa56232b201f87b682fd54ae04d0509d3d1",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/__init__.py",
+          "git_blob_sha1": "209b5a741844788977fcac0d4dfdecc50cd4c6ac",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/attachment_points.py",
+          "git_blob_sha1": "bc7686e413f4338d33610dd153ee58ca5695b921",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/bond_maker.py",
+          "git_blob_sha1": "cd5d3cfb63a0295bfca9b934507a35ea72b26065",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/bond_mapper.py",
+          "git_blob_sha1": "bd666a5c04a40446bed4cfe05c47f571361ad230",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/fragment_filter.py",
+          "git_blob_sha1": "aec137b03241f01c1f5e691252808feef0fc813c",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/fragment_reactions.py",
+          "git_blob_sha1": "7f4dbc29d27d09c45895000849f5b5af1e7a1589",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/molecular_descriptors_enum.py",
+          "git_blob_sha1": "f6be2347aa4ad7fa81782999e7e0d143627f3e59",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/dtos/__init__.py",
+          "git_blob_sha1": "f8e917f2cda21c3542562d3155d3072cc68d4c69",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/dtos/filtering_condition_dto.py",
+          "git_blob_sha1": "686ef0fb44c0b147dc68755cdc9f038c2561ccf5",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/dtos/reaction_dto.py",
+          "git_blob_sha1": "f6a1c875deb4d2b28dd82fae9b7724fdd8fd81d0",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/dtos/reaction_outcome_dto.py",
+          "git_blob_sha1": "41a97975c017aa7f41dfd54233437614e45c011e",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_definitions/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_definitions/leaving_groups_dto.py",
+          "git_blob_sha1": "d1afd052a63ce53baf8ceb561b35ec3538c1bab9",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_definitions/standard_definitions.py",
+          "git_blob_sha1": "a46ef8a7ed19775c5e6334810fe2690d7a03769b",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_definitions/data/reaction_definitions.csv",
+          "git_blob_sha1": "b4b4ba26c3e6e816baac6c5e399ac06cfa240d2f",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_filters/__init__.py",
+          "git_blob_sha1": "a14d1a417bf9b1f2b8dcd02435b073091b303921",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_filters/base_reaction_filter.py",
+          "git_blob_sha1": "32634a61a5cc0ccffeeb6e061e206a8a0d278502",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_filters/defined_selective_filter.py",
+          "git_blob_sha1": "1e2d3fa0f7814fc02223fa81b4533581e49d0fbb",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_filters/non_selective_filter.py",
+          "git_blob_sha1": "d1c067ee41b31c39729e4d843d41e6c69551efa7",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_filters/reaction_filter_configruation.py",
+          "git_blob_sha1": "27378a89f4a6c3a9ad7a16aac0b0a8577b9d976b",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_filters/reaction_filter_enum.py",
+          "git_blob_sha1": "98b7a41537e1dca8edb21b3ee26f3a03bfe029d3",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_filters/reaction_filter.py",
+          "git_blob_sha1": "325b86bc2dd5e28c986830496b8fcd421af8cd5d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/library_design/reaction_filters/selective_filter.py",
+          "git_blob_sha1": "de774a2146b7d5228f81e6d492957a3e1ee2e8e0",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/standardization/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/standardization/filter_configuration.py",
+          "git_blob_sha1": "63e7db6cf443c00f193a4e7a2eb82af525ad869a",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/standardization/filter_registry.py",
+          "git_blob_sha1": "c1f7c65cf5d61c3a78b0ff695f624dd9f2926a15",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/standardization/filter_types_enum.py",
+          "git_blob_sha1": "08d29a36b4100f4ea5d8593de0797f8c78f233b9",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/chemistry/standardization/rdkit_standardizer.py",
+          "git_blob_sha1": "bc350cc70d4e71d47998ccb90f5a3d3894dba21f",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/__init__.py",
+          "git_blob_sha1": "5fb1a6f26320fdf686710539c35a573794a20a1c",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/meta_data.py",
+          "git_blob_sha1": "926e1a4878ce5b52ca5ab6bb25e5f050fe06529a",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/meta_data2.py",
+          "git_blob_sha1": "d545e963a5659bd5dc4314488333f41db0fa3200",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_mode_enum.py",
+          "git_blob_sha1": "f94a1dd08234030ac94710d195a5bf8f99589de1",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_parameter_enum.py",
+          "git_blob_sha1": "8c573cc94740cf850d42256480d45c6da916f883",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/libinvent/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/libinvent/models/__init__.py",
+          "git_blob_sha1": "8ace6131790556150765b2e1ed3012107e293179",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/libinvent/models/dataset.py",
+          "git_blob_sha1": "16c815de048abe006b306f432f271dad2ce7bc25",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/libinvent/models/decorator.py",
+          "git_blob_sha1": "75925e2287de80d9a81e7421a784f7eddba11619",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/libinvent/models/model.py",
+          "git_blob_sha1": "ba259dc7c3c5e6b7590d9065ed3dcdd88e317694",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/libinvent/models/vocabulary.py",
+          "git_blob_sha1": "3a9fa961d4f024fb5bf357c23fe3a0bac642ccf8",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/link_invent_model.py",
+          "git_blob_sha1": "2a433b3b9ff9d35e20303e1c51ec78e448484717",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/dataset/__init__.py",
+          "git_blob_sha1": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/dataset/dataset.py",
+          "git_blob_sha1": "03bad3a2a91786eff738f12ef7a598f1e87c708a",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/dataset/paired_dataset.py",
+          "git_blob_sha1": "f46dc8e6d3012da65c8fe3246394cbfbc7b04dff",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/model_vocabulary/__init__.py",
+          "git_blob_sha1": "daed2e4bafb294debd2cda6f909ea8a87dc682eb",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/model_vocabulary/model_vocabulary.py",
+          "git_blob_sha1": "ed8835ac0a5c3c883900d9ebb25089763c6532b4",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/model_vocabulary/paired_model_vocabulary.py",
+          "git_blob_sha1": "c2a05510cb312eb170a2a843cfa4519bc40d2212",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/model_vocabulary/vocabulary.py",
+          "git_blob_sha1": "fa6114d8e322061d420d226a5da6e7fdc6133217",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/networks/__init__.py",
+          "git_blob_sha1": "39d878c485ad24d98ab03cc6b92af538a4dd4a2f",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/networks/attention_layer.py",
+          "git_blob_sha1": "d421c1a7b6332daabe50111f9caf9abe7411abae",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/networks/decoder.py",
+          "git_blob_sha1": "2a7d1cb5030ce854a733de88d3aea70304f2cff8",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/networks/encoder_decoder.py",
+          "git_blob_sha1": "70846927aadf433bd84bff671c17bf299d82c19d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/linkinvent/networks/encoder.py",
+          "git_blob_sha1": "cc4d9ee7d7884618bfe05a64bdbaa438b7626b08",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/libinvent_adapter.py",
+          "git_blob_sha1": "2fc72dc5bbea406e238692106d5de83d4408c658",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/linkinvent_adapter.py",
+          "git_blob_sha1": "32a569b594c7b130321775b6b194442eefe3f8da",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/model_adapter.py",
+          "git_blob_sha1": "9dd16ff3050ed059e2f2f3569e34e4c9cc647927",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/mol2mol_adapter.py",
+          "git_blob_sha1": "eed2bffb3e7a33d409f48836a8f869653e1e30dc",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/pepinvent_adapter.py",
+          "git_blob_sha1": "b0b107532b613c7dec2e2f65ab990a7dad1bee55",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/reinvent_adapter.py",
+          "git_blob_sha1": "5bc1260563047a712bb5519c59276b031b0f94b1",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/sample_batch.py",
+          "git_blob_sha1": "0037f6b00b081c04e5cd30a031006d8195bf657f",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/model_factory/transformer_adapter.py",
+          "git_blob_sha1": "ebb60f3d996967d90d17d71045b4209ce1c9a572",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/mol2mol/models/vocabulary.py",
+          "git_blob_sha1": "f22a5cf2063cb257a6b9441f090ac2ad4ffbe23a",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/reinvent/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/reinvent/utils.py",
+          "git_blob_sha1": "f4ca0768890e4ae920a5bbd40bf80067a2576713",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/reinvent/models/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/reinvent/models/dataset.py",
+          "git_blob_sha1": "18328515d6c1e15b36a6b03c4df319ee2a3c6aa9",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/reinvent/models/model.py",
+          "git_blob_sha1": "e95e0c9f897e874c1d07edaa5b715fed71e16e66",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/reinvent/models/rnn.py",
+          "git_blob_sha1": "beb3ca17615297fd725cf95bc7fd683e4e5eb09d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/reinvent/models/vocabulary.py",
+          "git_blob_sha1": "703655063c0028c3ccfce032cbf04bbdecb9cc71",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/transformer.py",
+          "git_blob_sha1": "3b7e349ecb68d605eba7ba5528e4494abbd4c60c",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/vocabulary.py",
+          "git_blob_sha1": "c66786a1b354762a82304f1b7b14388d47512c06",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/dataset/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/dataset/dataset.py",
+          "git_blob_sha1": "877a036b1c17179fb671aa089e6d5a5114648a41",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/dataset/paired_dataset.py",
+          "git_blob_sha1": "ffe497f85d19db5a5e9486763642ba0a9f417ff7",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/dto/__init__.py",
+          "git_blob_sha1": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/dto/batch_dto.py",
+          "git_blob_sha1": "0c0cb47af450589c1e6fe4f2b4b1ccfed3c96248",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/enums/__init__.py",
+          "git_blob_sha1": "8b137891791fe96927ad78e64b0aad7bded08bdc",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/enums/sampling_mode_enum.py",
+          "git_blob_sha1": "50a4fe575b93730b56c4775d9bc79f48a4500db6",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/clones.py",
+          "git_blob_sha1": "90f5a79e07d76dcbd2b56be93b4d4658bff40093",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/decoder_layer.py",
+          "git_blob_sha1": "4bead788bbc9f487798ccfa8275fc3823724b9d0",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/decoder.py",
+          "git_blob_sha1": "c39a7403e4e3ffad35e25021231a234d87933a20",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/encoder_layer.py",
+          "git_blob_sha1": "76131fee3d0ac67eb9a5a16abaf816e93d948e7e",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/encoder.py",
+          "git_blob_sha1": "bff03f16b79f7c7dcff09d59a216b1ee5c378d24",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/layer_norm.py",
+          "git_blob_sha1": "8ef96b700aee15312871c1e59d667eca134697ad",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/model.py",
+          "git_blob_sha1": "c7d88ca69b8f7c721b082c2d4c8e19c05f2bd6b5",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/encode_decode/sublayer_connection.py",
+          "git_blob_sha1": "726201adc8542ed269fc1ecfed7544f50f77425d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/decode.py",
+          "git_blob_sha1": "eb10408b54a0f7f594716ad695a9f049c794d929",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/embeddings.py",
+          "git_blob_sha1": "3e8bf92df385ebf96fa826ef1767f4eaa9349c88",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/generator.py",
+          "git_blob_sha1": "0dac93cb55182e3ea5c79ee55b1cb5c4d1df85b6",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/label_smoothing.py",
+          "git_blob_sha1": "96d4407a8cbb1703b805c7e514dbfe9d575d045d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/multi_headed_attention.py",
+          "git_blob_sha1": "09e4019b79d57d24bf1c2f8cbb4208310efc128d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/noam_opt.py",
+          "git_blob_sha1": "c69ca337f131ed280d6b4d3fc949ffe3e5841213",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/positional_encoding.py",
+          "git_blob_sha1": "39c4cd7952a531748979778c6e6184502bd8aff0",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/positionwise_feedforward.py",
+          "git_blob_sha1": "116d00541458d6bb45301da9276ab008a90273ed",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/search.py",
+          "git_blob_sha1": "e7c9f1851cc4347050db494f07561538e6831656",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/simpleloss_compute.py",
+          "git_blob_sha1": "19b4e7493e909c6da4feb09c1d9f4a6a674b9e62",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/core/network/module/subsequent_mask.py",
+          "git_blob_sha1": "5c5f4448c092aba9c4fb24d122d692c148a07d80",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/libinvent/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/libinvent/libinvent.py",
+          "git_blob_sha1": "a2735b73a51794f6b89d121e964946fbc14d01a5",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/linkinvent/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/linkinvent/linkinvent.py",
+          "git_blob_sha1": "024634f2491f22d3926902265def132de2154c5e",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/mol2mol.py",
+          "git_blob_sha1": "07b0333e09e2c895a6bf9eeb35e850373a10ffc5",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/dataset/__init__.py",
+          "git_blob_sha1": "b14b29c49a316441bdeb461e5833d38087e4e7b7",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/dataset/get_pair_generator.py",
+          "git_blob_sha1": "91b7a6183f952acb9a6f7e848e1d50d6eefe7935",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/dataset/preprocessing/__init__.py",
+          "git_blob_sha1": "09a96596a265d0dc994d3f3fa2305f2f2a4bdb4e",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/dataset/preprocessing/mmp.py",
+          "git_blob_sha1": "e03857cc9d60459222f6a5347c0adc430dc2f94b",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/dataset/preprocessing/pair_generator.py",
+          "git_blob_sha1": "6b493829a2f5163d5141e5a6727505e147926bb7",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/dataset/preprocessing/precomputed.py",
+          "git_blob_sha1": "96a25ea129dc1e15d28f3e45dd084c3a806e29d9",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/dataset/preprocessing/scaffold.py",
+          "git_blob_sha1": "1b65e0da5ba906ca1ec20fa83a2e57928a64fe2e",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/mol2mol/dataset/preprocessing/tanimoto.py",
+          "git_blob_sha1": "a2395c4f88496d423d06e6c6b85a6a31da007c78",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/pepinvent/__init__.py",
+          "git_blob_sha1": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/transformer/pepinvent/pepinvent.py",
+          "git_blob_sha1": "8c27efecd3678d7527364aa5e2def2bb081a6c26",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/utils/__init__.py",
+          "git_blob_sha1": "14e09e225856e069281b7c1b0dca72c819eefb85",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/utils/consistify.py",
+          "git_blob_sha1": "46d8f5a024a700436778ccab800ac8913b4dec54",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/models/utils/parallel.py",
+          "git_blob_sha1": "4805c5ecfb1da19ea61cfe2bec69e91d7c4c2e6d",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/utils/__init__.py",
+          "git_blob_sha1": "2a217ed4c473dceb4d7e8103f0b7217063793996",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/utils/cli.py",
+          "git_blob_sha1": "e98f4b0420ae02c4ad02cf6b579d1a2fed21bbf3",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/utils/config_parse.py",
+          "git_blob_sha1": "caa11c40a1ddfcaa5aef0757fa188dc75126e1de",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/utils/errors.py",
+          "git_blob_sha1": "49c4863d2b5efa0ee615584df774b690b5111986",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/utils/helpers.py",
+          "git_blob_sha1": "8885301db747c26448def79a2895f72fa897a29b",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/utils/hw_report.py",
+          "git_blob_sha1": "c9d7feddd03559c1514b758fffdedab150ee29a0",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/utils/logmon.py",
+          "git_blob_sha1": "b9a4c1eb5943929586384fb17401a373b71d321e",
+          "matches_github": true
+        },
+        {
+          "path": "reinvent/utils/prior_registry.py",
+          "git_blob_sha1": "683b47bb5e22c935307a237b7ae195b2104ec31e",
+          "matches_github": true
+        }
+      ]
+    },
+    "mol2mol_weight": {
+      "url": "https://raw.githubusercontent.com/MolecularAI/REINVENT4/b44124489e8ddeabaccf5856b5d823f1574db063/priors/mol2mol_similarity.prior",
+      "git_blob_sha1": "f7f0b747593ac429d9a29d6c3d4c225b5ecf9059",
+      "expected_location": "models_outputs/mol2mol_similarity.prior",
+      "later_archive": "https://doi.org/10.5281/zenodo.15641297"
+    },
+    "chemgpt": {
+      "url": "https://huggingface.co/ncfrey/ChemGPT-4.7M/tree/7438a282460b3038e17a27e25b85b1376e9a23e2",
+      "revision": "7438a282460b3038e17a27e25b85b1376e9a23e2",
+      "expected_location": "cycle07_model/checkpoint",
+      "note": "Model weights are not redistributed; verify upstream terms before obtaining them."
+    },
+    "selfies": {
+      "distribution_version": "1.0.4",
+      "internal_version": "1.0.3",
+      "expected_location": "cycle07_model/vendor/selfies",
+      "artifacts": [
+        {
+          "url": "https://files.pythonhosted.org/packages/ad/d8/9ee274ee002188a3e343df1575fde1d5e6a270dcb98560a65928b4abb5d3/selfies-1.0.4-py3-none-any.whl",
+          "sha256": "e41009c1b5512d87ed8ea4d2a52ea9d833fbe6ddeb9ea34990b4a4d77b5b037c"
+        },
+        {
+          "url": "https://files.pythonhosted.org/packages/8b/86/144f3caf494032e24f5260c0d1b2867f04919f59a53009583bace2037ba3/selfies-1.0.4.tar.gz",
+          "sha256": "802d76edd9717d06cb994974ffd1224c14047fa5f802853666fd79bc7e99c949"
+        }
+      ]
+    },
+    "official_scoring": {
+      "url": "https://raw.githubusercontent.com/OpenADMET/CYP-Challenge-Tutorial/main/evaluation/custom_scoring_functions.py",
+      "expected_location": "cycle06_novelty/official_custom_scoring_functions.py",
+      "note": "Mutable acquisition pointer; the recorded input hash identifies the exact historical source. Third-party code is not redistributed."
+    }
+  },
+  "required_input_examples": [
+    {
+      "path": "cycle02/chembl28_structure_overlap.csv",
+      "bytes": 141794,
+      "sha256": "cf54df3d13c44cd97d389f9f8841eaeef731a5b5988d887dbfe4aa700c31ef06",
+      "distributed": false
+    },
+    {
+      "path": "cycle02_data_b/PXR_DATA_CONTRACT.md",
+      "bytes": 3422,
+      "sha256": "aa146c04390c6a3aac8be3f3c18e62626ca98e29083dd9a1a2292a4b7e17747d",
+      "distributed": false
+    },
+    {
+      "path": "cycle02_data_b/labels/pxr_test_labels.csv",
+      "bytes": 70578,
+      "sha256": "da3c8163159730432f761d1a5b483c70e783779d693928c85f8f21f4b9e577f9",
+      "distributed": false
+    },
+    {
+      "path": "cycle02_data_b/labels/pxr_train_labels.csv",
+      "bytes": 586240,
+      "sha256": "c8740f8b7108c69c8f89ebf687cdbafb8ca43660ce1d899e03dd7427b139f152",
+      "distributed": false
+    },
+    {
+      "path": "cycle02_data_b/pxr-challenge_TEST_BLINDED.csv",
+      "bytes": 31805,
+      "sha256": "e8a8eed3e81e4fb6c443cba2200a89f855f769541ce786508f7efc2b4edb517c",
+      "distributed": false
+    },
+    {
+      "path": "cycle02_data_b/pxr_prepared_test.csv",
+      "bytes": 154919,
+      "sha256": "5b6f724f5ba85f2df10df0757a90bafe1552e6f501d545e2a1992d6bc4770cb9",
+      "distributed": false
+    },
+    {
+      "path": "cycle02_data_b/pxr_prepared_train.csv",
+      "bytes": 1379340,
+      "sha256": "c884fa2861630aace99bc4ae634ff2875446f59923dc53d652fed6d2609fbe77",
+      "distributed": false
+    },
+    {
+      "path": "cycle05_data/cyp-challenge-TEST-BLINDED.csv",
+      "bytes": 44935,
+      "sha256": "a342f8444a8dcb531ca12f3685293f0bd6c36ae9073f491e44a9bc1cc4b741f9",
+      "distributed": false
+    },
+    {
+      "path": "cycle05_data/cyp-challenge-TEST-UNBLINDED_inhibition.csv",
+      "bytes": 181624,
+      "sha256": "6551eba506c90cf51434bc1764424e928cfa19b45854148d692247b8eb49f74c",
+      "distributed": false
+    },
+    {
+      "path": "cycle05_data/cyp-challenge-TRAIN_inhibition.csv",
+      "bytes": 653407,
+      "sha256": "b8f79addd266fb6f9f4c222c5e4e73d926362328b6a8d2841871a54e46bd2278",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp1a2/early_labels.csv",
+      "bytes": 77336,
+      "sha256": "c023b40593f8c66c537bb738337762023f349954d954fb3e7e65f93b6efcceb5",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp1a2/late_labels.csv",
+      "bytes": 39018,
+      "sha256": "722d53ab729f21d486664df5f7c074e06ef4d59998ef2504e1a62e7056159e4f",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp1a2/structures.csv",
+      "bytes": 132979,
+      "sha256": "396b406c239c293ca298f61c1acae6abe9ae7267f8fa62f18d5f548040b5aaf5",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp2c9/early_labels.csv",
+      "bytes": 69988,
+      "sha256": "0f4ce7e34fd6e410e3af0e2e044a1389dafd11ec2455888294475f8f7019fa00",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp2c9/late_labels.csv",
+      "bytes": 38992,
+      "sha256": "48857d32f786b52f043509687b5b2343e4c8408810b36569d3712208ed96acfc",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp2c9/structures.csv",
+      "bytes": 128475,
+      "sha256": "17330d0800e8907c6ae68d75cc9bb5e0665b30b1d32d571d0b3ef59dadcd4b8c",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp2d6/early_labels.csv",
+      "bytes": 81365,
+      "sha256": "edd22556a9d23351e444ec96667c383056783b7a4cac723285ead85cda23f73c",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp2d6/late_labels.csv",
+      "bytes": 38993,
+      "sha256": "1cd95a5478ac17f44513f936975c3a075d7dd28b7441b239daa196510be5a818",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp2d6/structures.csv",
+      "bytes": 139731,
+      "sha256": "e508d646e86395c26fc8b2ef2234106f3e6a465e9d3d85afed9f87b86edaf1e0",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp3a4/early_labels.csv",
+      "bytes": 126736,
+      "sha256": "8bac580028d8f4d182b5c9d9ce62479d5c3d8baf7f26f036e5198b39e2a0f426",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp3a4/late_labels.csv",
+      "bytes": 38921,
+      "sha256": "3e96c63f0377a55bcdc70308912a9bba666c0136442e20e3506f52594be415ff",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/cyp3a4/structures.csv",
+      "bytes": 194308,
+      "sha256": "c2150e45fe67d5a5e3f0e3f5663210a4f1bf042f3abaa72dc7aa08388b2a3dff",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/pxr/early_labels.csv",
+      "bytes": 111221,
+      "sha256": "4ab810892bf9d89d669228be42f7e1454b626ba352990381d5f78c3b283873fb",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/pxr/late_labels.csv",
+      "bytes": 22355,
+      "sha256": "318289563f4e5926fab96a647add1eb8584f48c5a2b7361747428f56d2a63e73",
+      "distributed": false
+    },
+    {
+      "path": "cycle06/pxr/structures.csv",
+      "bytes": 179057,
+      "sha256": "f40386dc04bac3f3e8cc223895df72be4d39ee046df8668a1913590017f1cfe1",
+      "distributed": false
+    },
+    {
+      "path": "cycle06_novelty/official_custom_scoring_functions.py",
+      "bytes": 14174,
+      "sha256": "c0ee287c06c0301d4b3bfd74559b90eb1bd85db68b75b7d018ae92280c0e1dd3",
+      "distributed": false
+    },
+    {
+      "path": "cycle07_model/checkpoint/config.json",
+      "bytes": 1284,
+      "sha256": "73a9eb113e31b2ac8a6b070469b749dbaa8110f72a197bea7899d93db462e8ba",
+      "distributed": false
+    },
+    {
+      "path": "cycle07_model/checkpoint/pytorch_model.bin",
+      "bytes": 70836865,
+      "sha256": "a8a39c5ea1d50c450632e003d21c90f847d815a801934b03a12b02010b74d21b",
+      "distributed": false
+    },
+    {
+      "path": "cycle07_model/checkpoint/tokenizer.json",
+      "bytes": 10789,
+      "sha256": "fee4dad651e2edb49afb5d6aa3e4fea437e08c740c80b6d1d6e1909ad2b30100",
+      "distributed": false
+    },
+    {
+      "path": "cycle08_data/NCATS_AID1645842_CYP2C9.csv",
+      "bytes": 2762350,
+      "sha256": "4769c177d824b05be4c7f2807a548f77f59be548b78fdc6ac473a91e4a851658",
+      "distributed": false
+    },
+    {
+      "path": "cycle08_data/NCATS_AID1645842_description.json",
+      "bytes": 81866,
+      "sha256": "c3f83b3e66d90c6ef58e439c2b5da40976f2d50545df124bb7e0277f903aa138",
+      "distributed": false
+    },
+    {
+      "path": "cycle08_data/NCATS_CYP2C9_candidates.csv",
+      "bytes": 944017,
+      "sha256": "1df484e2fbb07762cd3b1b3651e7210161949864587b46cd03633d4455e7b7cc",
+      "distributed": false
+    },
+    {
+      "path": "cycle08_data/NCATS_CYP2C9_fixed_curve_labels.csv",
+      "bytes": 2374386,
+      "sha256": "db9c68991fd1709afc86fa39f4fccc1a0fd13bedd04a033cc8fea49e1c306114",
+      "distributed": false
+    },
+    {
+      "path": "cycle08_data/NCATS_CYP2C9_replicates.csv",
+      "bytes": 2100824,
+      "sha256": "1e5f70df7c9d188f9e07aefee949a59f4caf241bf041e6e185d7cd28c9eaafc3",
+      "distributed": false
+    },
+    {
+      "path": "cycle08_data/NCATS_Octant_CYP2C9_structure_mapping.csv",
+      "bytes": 31167,
+      "sha256": "ab0ddb8ba582cbb71b4429d0bce602b2f8aced8b4f54432df59cf15cbc65b772",
+      "distributed": false
+    },
+    {
+      "path": "cycle08_ncats/ncats_adjudicated_labels.csv",
+      "bytes": 82646,
+      "sha256": "b1db17d2b7de6a57cdf0a69afd54f24a7f0714bc39374b121f83f3706297f829",
+      "distributed": false
+    },
+    {
+      "path": "cycle08_ncats/ncats_candidate_identity.csv",
+      "bytes": 368530,
+      "sha256": "647879cc17813f93401b06807ae28c4e8cbfc60e7f13366344b89146ab36e404",
+      "distributed": false
+    },
+    {
+      "path": "models_outputs/mol2mol_similarity.prior",
+      "bytes": 80196429,
+      "sha256": "64039ba739e9a0464f13840495d35b60b14c6575a0f4571ef4fcdae4e077e14f",
+      "distributed": false
+    }
+  ],
+  "input_inventory_scope": "Named primary inputs and key prepared intermediates; runtime outputs and archival prediction collections are described in README.md. This is not an exhaustive runtime-file manifest."
+}

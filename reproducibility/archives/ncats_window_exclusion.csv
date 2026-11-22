@@ -1,0 +1,2 @@
+candidate_id,analysis_id,PUBCHEM_CID,pIC50,min_included_uM,max_included_uM,fitted_AC50_uM,window_reason
+SID170464933,SID170464933,9270.0,4.8213,0.0007362990290857,11.4937000274658,15.090373879486435,outside_observed_window

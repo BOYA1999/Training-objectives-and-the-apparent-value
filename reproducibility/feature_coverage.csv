@@ -1,0 +1,21 @@
+endpoint,model,split,n,encoded,unavailable,encoded_percent,failure_statuses
+PXR,Mol2Mol,test,513,513,0,100.0,{}
+PXR,Mol2Mol,train,2191,2187,4,99.81743496120494,"{""out_of_vocabulary"": 4}"
+PXR,ChemGPT,test,513,491,22,95.71150097465888,"{""unknown_token"": 22}"
+PXR,ChemGPT,train,2191,1963,228,89.59379278868097,"{""unknown_token"": 228}"
+CYP1A2,Mol2Mol,test,750,750,0,100.0,{}
+CYP1A2,Mol2Mol,train,1412,1412,0,100.0,{}
+CYP1A2,ChemGPT,test,750,717,33,95.6,"{""unknown_token"": 33}"
+CYP1A2,ChemGPT,train,1412,1290,122,91.35977337110481,"{""unknown_token"": 122}"
+CYP2C9,Mol2Mol,test,750,750,0,100.0,{}
+CYP2C9,Mol2Mol,train,1285,1284,1,99.92217898832685,"{""out_of_vocabulary"": 1}"
+CYP2C9,ChemGPT,test,750,717,33,95.6,"{""unknown_token"": 33}"
+CYP2C9,ChemGPT,train,1285,1145,140,89.10505836575877,"{""unknown_token"": 140}"
+CYP2D6,Mol2Mol,test,750,750,0,100.0,{}
+CYP2D6,Mol2Mol,train,1493,1490,3,99.79906229068989,"{""out_of_vocabulary"": 3}"
+CYP2D6,ChemGPT,test,750,717,33,95.6,"{""unknown_token"": 33}"
+CYP2D6,ChemGPT,train,1493,1305,188,87.40790354989953,"{""unknown_token"": 188}"
+CYP3A4,Mol2Mol,test,750,750,0,100.0,{}
+CYP3A4,Mol2Mol,train,2335,2333,2,99.91434689507494,"{""out_of_vocabulary"": 2}"
+CYP3A4,ChemGPT,test,750,717,33,95.6,"{""unknown_token"": 33}"
+CYP3A4,ChemGPT,train,2335,2078,257,88.99357601713062,"{""unknown_token"": 257}"

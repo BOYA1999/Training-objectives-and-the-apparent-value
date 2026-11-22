@@ -1,0 +1,7 @@
+dataset,analysis,training_n,evaluation_n,eligibility,qualification
+CYP2C9,"FP, FP+Mol2Mol, FP+ChemGPT local controlled comparisons",1285,750,"Same inputs and feature-only augmentation across L1 point, L2 point, and interval objective; unavailable embeddings retained",L2 point control added after earlier results were seen; retrospective mechanism check
+PXR,Local continuous point/interval models,2191,513,Intervals contained in observed raw-DRC window; threshold-straddling training labels retained,Raw DRC released after challenge; post hoc evidence qualification
+PXR,Earlier binary-neighbor analyses,2131,513,Only threshold-resolved early labels,Different training rule from continuous models; do not pool as identical training N
+PXR,Archived submitted predictions,not standardized,260,Phase 2 only; complete submitted files matched by candidate ID and structure,Historical submissions may use different data/features and budgets; not controlled feature ablations
+NCATS CYP2C9,Local external transfer,1285,4764,Same Octant training records and fixed modeling procedure; independent NCATS test labels,Script refits fixed pipeline; does not load same serialized trees; no added L2-point control in this external run
+NCATS CYP2C9,Finite-potency sensitivity,1285,1765,Unchanged locked predictions; per-compound median of accepted finite curves; same candidates for MAE and shortlist,Selected measurable subset (37.0%); not full-panel MAE or prospective enrichment claim

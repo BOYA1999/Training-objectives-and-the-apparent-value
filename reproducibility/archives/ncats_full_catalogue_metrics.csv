@@ -1,0 +1,5 @@
+method,mae,n_mae,slots,hits,unknown,net_vs_fp_interval,net_lower,net_upper
+cont_fp_point,0.5247977361895962,1766,952,124,160,3,-34,35
+cont_fp_interval,0.5009284831347299,1766,952,121,165,0,0,0
+mol2mol,0.5809590544727614,1766,952,112,158,-9,-61,36
+chemgpt,0.5127462487620061,1766,952,121,158,0,-33,26

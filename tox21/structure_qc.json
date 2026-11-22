@@ -1,0 +1,23 @@
+{
+  "source_rows": 9667,
+  "unusable_structure_rows": 254,
+  "overlap_earlier_ncats": 2610,
+  "any_overlap": 2615,
+  "overlap_octant_pxr": 58,
+  "overlap_octant_cyp": 65,
+  "unique_connectivities": 7043,
+  "retained_candidates": 4428,
+  "tested_budget": 885,
+  "input_sha256": {
+    "octant_cyp": "17330d0800e8907c6ae68d75cc9bb5e0665b30b1d32d571d0b3ef59dadcd4b8c",
+    "octant_pxr": "f40386dc04bac3f3e8cc223895df72be4d39ee046df8668a1913590017f1cfe1",
+    "earlier_ncats": "1df484e2fbb07762cd3b1b3651e7210161949864587b46cd03633d4455e7b7cc"
+  },
+  "assay_sha256": "265e7a9834a51268cdd7cbf7a2e61fd28a58d206e2fc540e0a99f50b84e3e02e",
+  "registry_sha256": "039cfebcfe17410449957fc7b55464ab6a2dc0ca9a6ef7d1a20514b6d556aeef",
+  "input_fields_used": [
+    "PUBCHEM_SID",
+    "PUBCHEM_CID",
+    "PUBCHEM_EXT_DATASOURCE_SMILES"
+  ]
+}

@@ -1,0 +1,62 @@
+{
+  "classification": {
+    "primary_label": {
+      "None": 1743,
+      "0": 2668,
+      "1": 17
+    },
+    "cyp_only_label": {
+      "None": 1461,
+      "0": 2945,
+      "1": 22
+    },
+    "three_record_label": {
+      "None": 3118,
+      "0": 1298,
+      "1": 12
+    },
+    "counter_clear_two": {
+      "1": 3992,
+      "0": 436
+    },
+    "counter_clear_three": {
+      "1": 2946,
+      "0": 1482
+    },
+    "single_structure_variant": {
+      "1": 4334,
+      "0": 94
+    }
+  },
+  "cyp_record_qc": {
+    "recorded_classes": 17415,
+    "valid_all_zero_mask_with_missing_exported_doses": 13074,
+    "low_or_missing_efficacy": 2332,
+    "qualified_0": 4731,
+    "inactive_covered": 7260,
+    "other_curve_class": 1886,
+    "invalid_mask": 913,
+    "activation": 176,
+    "qualified_1": 107,
+    "no_threshold_span": 8,
+    "missing_or_out_of_window_fit": 2
+  },
+  "counter_screen_record_qc": {
+    "recorded_classes": 17413,
+    "valid_all_zero_mask_with_missing_exported_doses": 6371,
+    "qualified_0": 1740,
+    "inactive_covered": 13314,
+    "qualified_block": 557,
+    "invalid_mask": 1131,
+    "other_curve_class": 544,
+    "no_threshold_span": 120,
+    "activation": 6,
+    "missing_or_out_of_window_fit": 1
+  },
+  "source_sids": 5747,
+  "hashes": {
+    "outcome_sha256": "2992f3d1c17447c43b58b07bbd0e4365b3ed656d832fd5dd0bb87d6484906b07",
+    "protocol_sha256": "fa9c1bd4e9747fdc7d92f9b636817644f28d92c49e578b0bd2b41f8417cd4cb4",
+    "prediction_sha256": "f56ed235bc97dcfc04b54c1e3522cf560bebf579c8a5b2b713aa2f05852a3872"
+  }
+}

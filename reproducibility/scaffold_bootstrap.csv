@@ -1,0 +1,13 @@
+assay,method,comparator,budget,net,low_pct,high_pct,scaffolds
+cyp2c9,fp_point_l2,cont_fp_point,150,15,3.3333333333333335,18.0,546
+cyp2c9,cont_fp_interval,fp_point_l2,150,3,-0.6666666666666666,5.333333333333333,546
+cyp2c9,cont_fused_interval,fp_point_l2,150,-8,-10.666666666666666,0.0,546
+cyp2c9,cont_fused_interval,cont_fp_interval,150,-11,-12.666666666666666,-2.6666666666666665,546
+cyp2c9,ChemGPT,fp_point_l2,150,-5,-8.666666666666666,2.0,546
+cyp2c9,ChemGPT,cont_fp_interval,150,-8,-10.666666666666666,-0.6666666666666666,546
+pxr,fp_point_l2,cont_fp_point,102,-2,-5.882352941176471,1.9607843137254901,369
+pxr,cont_fp_interval,fp_point_l2,102,2,0.0,4.901960784313726,369
+pxr,cont_fused_interval,fp_point_l2,102,0,-7.8431372549019605,5.882352941176471,369
+pxr,cont_fused_interval,cont_fp_interval,102,-2,-9.803921568627452,3.9215686274509802,369
+pxr,ChemGPT,fp_point_l2,102,1,-4.901960784313726,5.882352941176471,369
+pxr,ChemGPT,cont_fp_interval,102,-1,-5.882352941176471,2.9411764705882355,369

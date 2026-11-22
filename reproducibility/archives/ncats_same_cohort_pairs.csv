@@ -1,0 +1,7 @@
+method_x,method_y,MAE_x_minus_y,observed_hit_x_minus_y,unknown_lower,unknown_upper,descriptive_reversal
+cont_fp_point,cont_fp_interval,0.023923773498541356,-4,-7,-4,False
+cont_fp_point,mol2mol,-0.05611018278221569,-2,-5,-2,True
+cont_fp_point,chemgpt,0.01213693203196009,-2,-5,-2,False
+cont_fp_interval,mol2mol,-0.08003395628075705,2,1,3,False
+cont_fp_interval,chemgpt,-0.011786841466581266,2,1,3,False
+mol2mol,chemgpt,0.06824711481417578,0,-1,1,False

@@ -1,0 +1,51 @@
+{
+  "started_utc": "2026-11-20T15:14:54.404519+00:00",
+  "train_rows": 1285,
+  "test_rows": 750,
+  "input_sha256": {
+    "cycle06\\cyp2c9\\structures.csv": "17330d0800e8907c6ae68d75cc9bb5e0665b30b1d32d571d0b3ef59dadcd4b8c",
+    "cycle06\\cyp2c9\\early_labels.csv": "0f4ce7e34fd6e410e3af0e2e044a1389dafd11ec2455888294475f8f7019fa00",
+    "cycle06\\fit.py": "7c395400b04b44690274f625658c0709ef1bec5c48a9fe7d8d3b57152a13647c",
+    "cycle06\\fit_continuous.py": "997f1b4be3fd848abec4669d06a8e0906429cfb437ede82297f0a45108b2672c",
+    "cycle09\\fit_point_control.py": "3ba09524378018054ee56cb5f3c345906c197fd7b7adfa37d790782a03601cdc",
+    "cycle06_model\\frozen_encoder.py": "00f5b17b2245886fb23b3c51f8ee7efbd2d358262eaa17c3a22889b0fb94a14a",
+    "cycle07_model\\frozen_chemgpt.py": "e2525831e7259c0097bff41524fbf9e814822f1493dc7229a459435e213bd44c",
+    "models_outputs\\mol2mol_similarity.prior": "64039ba739e9a0464f13840495d35b60b14c6575a0f4571ef4fcdae4e077e14f",
+    "cycle07_model\\checkpoint\\pytorch_model.bin": "a8a39c5ea1d50c450632e003d21c90f847d815a801934b03a12b02010b74d21b"
+  },
+  "base_parameters": {
+    "objective": "cross_entropy",
+    "verbosity": -1,
+    "num_threads": 2,
+    "num_leaves": 15,
+    "learning_rate": 0.05,
+    "min_data_in_leaf": 12,
+    "feature_fraction": 0.7,
+    "seed": 20261120,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "seed_values": [
+    20261120,
+    20261121,
+    20261122,
+    20261123,
+    20261124
+  ],
+  "rounds": 300,
+  "objectives": [
+    "point_l1",
+    "point_l2",
+    "interval"
+  ],
+  "representations": [
+    "FP",
+    "Mol2Mol",
+    "ChemGPT"
+  ],
+  "slots": 150,
+  "test_labels_forbidden_during_fit": true,
+  "retrospective_sensitivity": true,
+  "python_version": "3.12.0 (tags/v3.12.0:0fb18b0, Oct  2 2023, 13:03:39) [MSC v.1935 64 bit (AMD64)]",
+  "torch_version": "2.11.0+cu128"
+}

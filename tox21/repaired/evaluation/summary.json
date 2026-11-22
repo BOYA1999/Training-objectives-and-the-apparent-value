@@ -1,0 +1,55 @@
+{
+  "evaluated_utc": "2026-11-20T23:55:29.665823+00:00",
+  "candidates": 4428,
+  "budgets": {
+    "20%": 885,
+    "10%": 442,
+    "30%": 1328,
+    "fixed150": 150
+  },
+  "score_sha256": "f56ed235bc97dcfc04b54c1e3522cf560bebf579c8a5b2b713aa2f05852a3872",
+  "protocol_sha256": "fa9c1bd4e9747fdc7d92f9b636817644f28d92c49e578b0bd2b41f8417cd4cb4",
+  "outcome_sha256": "2992f3d1c17447c43b58b07bbd0e4365b3ed656d832fd5dd0bb87d6484906b07",
+  "tied_boundaries": 3,
+  "outcomes": {
+    "primary_label": {
+      "supported_hit": 17,
+      "supported_nonhit": 2668,
+      "unresolved": 1743
+    },
+    "cyp_only_label": {
+      "supported_hit": 22,
+      "supported_nonhit": 2945,
+      "unresolved": 1461
+    },
+    "three_record_label": {
+      "supported_hit": 12,
+      "supported_nonhit": 1298,
+      "unresolved": 3118
+    }
+  },
+  "primary_replication": {
+    "label_policy": "primary_label",
+    "budget": "20%",
+    "seed": 20261120,
+    "slots": 885,
+    "Mol2Mol_cross_net": -5,
+    "Mol2Mol_cross_lower": -89,
+    "Mol2Mol_cross_upper": 82,
+    "Mol2Mol_matched_net": -4,
+    "Mol2Mol_matched_lower": -75,
+    "Mol2Mol_matched_upper": 85,
+    "Mol2Mol_observed_sign_pattern": false,
+    "Mol2Mol_strong_bounded_pattern": false,
+    "ChemGPT_cross_net": -2,
+    "ChemGPT_cross_lower": -64,
+    "ChemGPT_cross_upper": 49,
+    "ChemGPT_matched_net": -1,
+    "ChemGPT_matched_lower": -53,
+    "ChemGPT_matched_upper": 55,
+    "ChemGPT_observed_sign_pattern": false,
+    "ChemGPT_strong_bounded_pattern": false,
+    "observed_sign_pattern_both": false,
+    "strong_bounded_pattern_both": false
+  }
+}

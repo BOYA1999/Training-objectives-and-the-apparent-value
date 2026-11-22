@@ -1,0 +1,18 @@
+{
+  "evaluated_utc": "2026-11-20T15:16:25.041929+00:00",
+  "per_column_original_seed_max_abs_score_difference": {
+    "ChemGPT_interval": 0.0,
+    "ChemGPT_point_l1": 0.0,
+    "ChemGPT_point_l2": 0.0,
+    "FP_interval": 0.0,
+    "FP_point_l1": 0.0,
+    "FP_point_l2": 0.0,
+    "Mol2Mol_interval": 0.0,
+    "Mol2Mol_point_l1": 0.0,
+    "Mol2Mol_point_l2": 0.0
+  },
+  "original_seed_matches": true,
+  "raw_labels_sha256": "6551eba506c90cf51434bc1764424e928cfa19b45854148d692247b8eb49f74c",
+  "seed_predictions_sha256": "6660151f6bdb7ab2ba321aa5cd6657a6eabda18f00509b8d379228652aef694c",
+  "no_boundary_ties": true
+}

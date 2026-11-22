@@ -1,0 +1,54 @@
+{
+  "question": "Does the original CYP2C9 attribution pattern for frozen Mol2Mol and ChemGPT reproduce in a separate measured campaign under a full 3x3 transfer?",
+  "hypothesis": "For both interval-trained fusions, the cross-objective absolute-point reference gives a positive hit difference and the same-interval reference gives a negative difference.",
+  "primary_metric": "Assay-supported hits in equal-size ranked shortlists and finite-panel paired bounds. Delta = known A hits minus B hits; bounds are delta minus B-only unresolved to delta plus A-only unresolved.",
+  "baselines": "FP = Morgan + FeatureMorgan + ten descriptors. Cross FP, FP + frozen Mol2Mol and FP + frozen ChemGPT with absolute point, quadratic point and quadratic interval objectives. Fit all 45 models using the same original 1,285 Octant training cases and released bounds. Same LightGBM 300 rounds, f=0.7, seeds 20261120 through 20261124, first seed primary. Retain tokenizer failures as missing embeddings.",
+  "split": "External assay test on 4,428 charge-parent connectivity groups from AID 1671198 after values-blind filtering. Exclude groups present in Octant CYP or PXR or the earlier AID1645842 raw structure registry. Resolve representative SMILES lexicographically before ranking. Keep groups with multiple isomeric fragment parents in ranking and adjudicate unresolved. No Tox21 outcomes in training. Rank by higher score, SHA256(isomeric fragment parent SMILES), then candidate_id.",
+  "pilot_gate": "Require original early training inputs and weights, both official dose and fit schemas, and values-blind registry at least as large as original 750-candidate test. Check all source fingerprints and permitted inputs.",
+  "main_gate": "Exact bounded replication only if for both interval-trained fusions at the primary seed and 20% budget, the cross-objective comparison with absolute FP has lower bound >0 and the same-interval comparison has upper bound <0. An opposite forced sign is directional contradiction. Otherwise distinguish observed-only pattern, partial replication or indeterminacy. Scaffold bootstrap is separate. No model, budget or panel choice in response to outcomes.",
+  "experiment_hours": 1.0,
+  "planned_runs": {
+    "pilot": [
+      "structure-lock"
+    ],
+    "main": [
+      "fit-five-seeds",
+      "adjudicate-and-evaluate"
+    ]
+  },
+  "evidence": [
+    "PLAN.md",
+    "structure_qc.json",
+    "source/aid1671198_description.json",
+    "source/aid1224835_description.json"
+  ],
+  "fingerprints": {
+    "source/aid1671198.csv": "265e7a9834a51268cdd7cbf7a2e61fd28a58d206e2fc540e0a99f50b84e3e02e",
+    "source/aid1671198_description.json": "07d75e3d1f68c8c019dd18a721621f566b26e6524e12b9b083a7c7aaa3c86773",
+    "source/aid1224835.csv": "6b1fdd88a87ae09580d89c66be6506f35aa0f9162379bd555c131c3a00e9ad57",
+    "source/aid1224835_description.json": "c5ce0cae712f26f72ffc97c60bb7e21d7885aa354a7b0b5937b9f0a3c39fb048",
+    "external_structures.csv": "039cfebcfe17410449957fc7b55464ab6a2dc0ca9a6ef7d1a20514b6d556aeef",
+    "structure_qc.json": "fa7f35d24c4e92891794e0a0a958926258a1a13f23479745f8b7be594cf7cc0c"
+  },
+  "budgets": {
+    "primary": "floor(0.20*n)=885",
+    "secondary": [
+      "floor(0.10*n)",
+      "floor(0.30*n)",
+      "150"
+    ]
+  },
+  "assay_outcome": {
+    "cyp": "Observed positive finite doses must span 1 uM after masking. Parse documented binary mask ascending over recorded doses; a blank mask means no documented exclusions; malformed or unmatched masks make the record unresolved. Class 4 with coverage supports below threshold. For classes -1.1/-1.2/-2.1/-2.2, require |fitted Efficacy|>65, finite Fit_LogAC50 in log10(M), and AC50 inside observed included doses. Its record supports above threshold if AC50<=1 uM, below otherwise. Use exact doses from depositor schema. Activating classes 1.1/1.2/2.1/2.2 block a determinate SID. Other calls remain unresolved.",
+    "counter": "Join AID1224835 by exact SID. A record must span 20 uM. Class 4 qualifies as clear. An inhibitory-class fit with AC50 >20 uM and inside the included dose window qualifies as clear. An in-window inhibitory-class AC50 <=20 uM or an activating class blocks clearance. Require at least two clear records and no block. Other records unresolved.",
+    "aggregation": "Per SID require at least two concordant determinate CYP records without contrary determinate or activating records. Per connectivity require all source SIDs to give the same determinate result and all to clear the reporter screen. Multiple distinct standardized isomeric parents count as unresolved. Missing coverage, concordance or controls remain unresolved. Rank all candidates.",
+    "checks": [
+      "Primary label uses at least two concordant CYP and two clear counter records.",
+      "cyp_only_label omits the counter rule with otherwise identical CYP adjudication.",
+      "three_record_label raises both CYP determinate and counter clear minimums to three.",
+      "Public replicate slots represent reported records. Direct run mapping is unverified and their concordance does not imply nominal 95% coverage."
+    ]
+  },
+  "bootstrap": "15,000 Murcko-scaffold multinomial draws, seed 20261120, acyclic singleton identities, original budget denominator, fixed lists and observed known hits.",
+  "comparison_scope": "Report all 18 augmented-vs-FP and two FP-loss changes for all seeds and budgets. Separate unresolved outcome bounds from scaffold composition. Scope is signal of apparent probe-turnover inhibition in vitro."
+}

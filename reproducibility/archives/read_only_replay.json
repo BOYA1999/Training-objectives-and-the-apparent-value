@@ -1,0 +1,21 @@
+{
+  "cycle05/evaluate_external.py": [
+    "external_validation.csv (3 rows)",
+    "selected_external.csv (156 rows)",
+    "external_pairs.csv (3 rows)"
+  ],
+  "cycle08_independent/ncats_metric_sensitivity.py": [
+    "ncats_metric_vs_hit_summary.csv (4 rows)",
+    "ncats_metric_vs_hit_pairs.csv (6 rows)",
+    "ncats_qualified_median_targets.csv (1766 rows)"
+  ],
+  "cycle09/external/same_cohort_sensitivity.py": [
+    "ncats_qualified_curve_window_audit.csv (1914 rows)",
+    "same_cohort_summary.csv (4 rows)",
+    "same_cohort_pairs.csv (6 rows)",
+    "same_cohort_candidate_results.csv (1765 rows)"
+  ],
+  "cycle08_benchmark/compare_examples.py": [
+    "cross_benchmark_examples.csv (21 rows)"
+  ]
+}

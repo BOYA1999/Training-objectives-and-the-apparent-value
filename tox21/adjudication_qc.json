@@ -1,0 +1,49 @@
+{
+  "classification": {
+    "primary_label": {
+      "None": 3946,
+      "0": 482
+    },
+    "cyp_only_label": {
+      "None": 3807,
+      "0": 621
+    },
+    "three_record_label": {
+      "None": 4361,
+      "0": 67
+    },
+    "counter_clear_two": {
+      "1": 2594,
+      "0": 1834
+    },
+    "counter_clear_three": {
+      "0": 3271,
+      "1": 1157
+    },
+    "single_structure_variant": {
+      "1": 4334,
+      "0": 94
+    }
+  },
+  "cyp_record_qc": {
+    "recorded_classes": 17415,
+    "invalid_mask": 13987,
+    "inactive_covered": 3245,
+    "activation": 176,
+    "no_threshold_span": 6,
+    "other_curve_class": 1
+  },
+  "counter_screen_record_qc": {
+    "recorded_classes": 17413,
+    "invalid_mask": 7502,
+    "inactive_covered": 9813,
+    "no_threshold_span": 92,
+    "activation": 6
+  },
+  "source_sids": 5747,
+  "hashes": {
+    "outcome_sha256": "6c0cafc5a385bcf3e08fb4c140cf27773ec2a1eb1a9eb108481d838e922bd33a",
+    "protocol_sha256": "fa9c1bd4e9747fdc7d92f9b636817644f28d92c49e578b0bd2b41f8417cd4cb4",
+    "prediction_sha256": "f56ed235bc97dcfc04b54c1e3522cf560bebf579c8a5b2b713aa2f05852a3872"
+  }
+}

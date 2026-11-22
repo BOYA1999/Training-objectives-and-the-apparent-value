@@ -1,0 +1,3 @@
+model,slots,aligned_hits,permuted_hits,net,lower,upper
+Mol2Mol,150,57,52,5,3,10
+ChemGPT,150,60,54,6,3,10

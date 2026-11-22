@@ -1,0 +1,359 @@
+{
+  "locked_utc": "2026-11-20T15:15:59.712498+00:00",
+  "sha256": "6660151f6bdb7ab2ba321aa5cd6657a6eabda18f00509b8d379228652aef694c",
+  "rows": 3750,
+  "score_columns": [
+    "FP_point_l1",
+    "Mol2Mol_point_l1",
+    "ChemGPT_point_l1",
+    "FP_point_l2",
+    "Mol2Mol_point_l2",
+    "ChemGPT_point_l2",
+    "FP_interval",
+    "Mol2Mol_interval",
+    "ChemGPT_interval"
+  ],
+  "elapsed_seconds": 66.22163820000424,
+  "coverage": {
+    "Mol2Mol": {
+      "seconds": 11.82002850000572,
+      "counts": {
+        "test/ok": 750,
+        "train/ok": 1284,
+        "train/out_of_vocabulary": 1
+      }
+    },
+    "ChemGPT": {
+      "seconds": 12.764238499992643,
+      "counts": {
+        "test/ok": 717,
+        "test/unknown_token": 33,
+        "train/ok": 1145,
+        "train/unknown_token": 140
+      }
+    }
+  },
+  "timings": [
+    {
+      "seed": 20261120,
+      "model": "FP_point_l1",
+      "seconds": 0.19684659999620635,
+      "features": 3082
+    },
+    {
+      "seed": 20261120,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.8964454999950249,
+      "features": 3338
+    },
+    {
+      "seed": 20261120,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.7081898000033107,
+      "features": 3210
+    },
+    {
+      "seed": 20261120,
+      "model": "FP_point_l2",
+      "seconds": 0.18128799999249168,
+      "features": 3082
+    },
+    {
+      "seed": 20261120,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.6841841999994358,
+      "features": 3338
+    },
+    {
+      "seed": 20261120,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.6092419999913545,
+      "features": 3210
+    },
+    {
+      "seed": 20261120,
+      "model": "FP_interval",
+      "seconds": 0.17930459999479353,
+      "features": 3082
+    },
+    {
+      "seed": 20261120,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.7741260000038892,
+      "features": 3338
+    },
+    {
+      "seed": 20261120,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6294349000090733,
+      "features": 3210
+    },
+    {
+      "seed": 20261121,
+      "model": "FP_point_l1",
+      "seconds": 0.18181160000676755,
+      "features": 3082
+    },
+    {
+      "seed": 20261121,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.914595599999302,
+      "features": 3338
+    },
+    {
+      "seed": 20261121,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.676556199992774,
+      "features": 3210
+    },
+    {
+      "seed": 20261121,
+      "model": "FP_point_l2",
+      "seconds": 0.179703799993149,
+      "features": 3082
+    },
+    {
+      "seed": 20261121,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.6701469999970868,
+      "features": 3338
+    },
+    {
+      "seed": 20261121,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.6003741000022274,
+      "features": 3210
+    },
+    {
+      "seed": 20261121,
+      "model": "FP_interval",
+      "seconds": 0.1863215999910608,
+      "features": 3082
+    },
+    {
+      "seed": 20261121,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.7835148999874946,
+      "features": 3338
+    },
+    {
+      "seed": 20261121,
+      "model": "ChemGPT_interval",
+      "seconds": 0.638603500003228,
+      "features": 3210
+    },
+    {
+      "seed": 20261122,
+      "model": "FP_point_l1",
+      "seconds": 0.1849511999898823,
+      "features": 3082
+    },
+    {
+      "seed": 20261122,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.8605943000002299,
+      "features": 3338
+    },
+    {
+      "seed": 20261122,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.6911809999874095,
+      "features": 3210
+    },
+    {
+      "seed": 20261122,
+      "model": "FP_point_l2",
+      "seconds": 0.17713319999165833,
+      "features": 3082
+    },
+    {
+      "seed": 20261122,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.7078435000003083,
+      "features": 3338
+    },
+    {
+      "seed": 20261122,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.6052466000110144,
+      "features": 3210
+    },
+    {
+      "seed": 20261122,
+      "model": "FP_interval",
+      "seconds": 0.17962439999973867,
+      "features": 3082
+    },
+    {
+      "seed": 20261122,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.7650029999931576,
+      "features": 3338
+    },
+    {
+      "seed": 20261122,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6401020000048447,
+      "features": 3210
+    },
+    {
+      "seed": 20261123,
+      "model": "FP_point_l1",
+      "seconds": 0.18471420000423677,
+      "features": 3082
+    },
+    {
+      "seed": 20261123,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.845435399998678,
+      "features": 3338
+    },
+    {
+      "seed": 20261123,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.6946169000002556,
+      "features": 3210
+    },
+    {
+      "seed": 20261123,
+      "model": "FP_point_l2",
+      "seconds": 0.18514549999963492,
+      "features": 3082
+    },
+    {
+      "seed": 20261123,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.7151084000070114,
+      "features": 3338
+    },
+    {
+      "seed": 20261123,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.632695699998294,
+      "features": 3210
+    },
+    {
+      "seed": 20261123,
+      "model": "FP_interval",
+      "seconds": 0.1836098000057973,
+      "features": 3082
+    },
+    {
+      "seed": 20261123,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.8285268000036012,
+      "features": 3338
+    },
+    {
+      "seed": 20261123,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6598496999940835,
+      "features": 3210
+    },
+    {
+      "seed": 20261124,
+      "model": "FP_point_l1",
+      "seconds": 0.18816550000337884,
+      "features": 3082
+    },
+    {
+      "seed": 20261124,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.9179431999946246,
+      "features": 3338
+    },
+    {
+      "seed": 20261124,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.7121479000052204,
+      "features": 3210
+    },
+    {
+      "seed": 20261124,
+      "model": "FP_point_l2",
+      "seconds": 0.19796130000031553,
+      "features": 3082
+    },
+    {
+      "seed": 20261124,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.7645060000068042,
+      "features": 3338
+    },
+    {
+      "seed": 20261124,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.6128215000062482,
+      "features": 3210
+    },
+    {
+      "seed": 20261124,
+      "model": "FP_interval",
+      "seconds": 0.18106689999694936,
+      "features": 3082
+    },
+    {
+      "seed": 20261124,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.791649699996924,
+      "features": 3338
+    },
+    {
+      "seed": 20261124,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6730748999980278,
+      "features": 3210
+    }
+  ],
+  "project_read_paths": [
+    "cycle06/cyp2c9/early_labels.csv",
+    "cycle06/cyp2c9/structures.csv",
+    "cycle06/fit.py",
+    "cycle06/fit_continuous.py",
+    "cycle06_model/frozen_encoder.py",
+    "cycle07_model/checkpoint/config.json",
+    "cycle07_model/checkpoint/pytorch_model.bin",
+    "cycle07_model/frozen_chemgpt.py",
+    "cycle07_model/vendor/selfies/__init__.py",
+    "cycle07_model/vendor/selfies/decoder.py",
+    "cycle07_model/vendor/selfies/encoder.py",
+    "cycle07_model/vendor/selfies/grammar_rules.py",
+    "cycle07_model/vendor/selfies/kekulize.py",
+    "cycle07_model/vendor/selfies/utils.py",
+    "cycle09/fit_point_control.py",
+    "models_outputs/local_packages/xxhash-4.1.0.dist-info/METADATA",
+    "models_outputs/local_packages/xxhash-4.1.0.dist-info/entry_points.txt",
+    "models_outputs/local_packages/xxhash-4.1.0.dist-info/top_level.txt",
+    "models_outputs/mol2mol_similarity.prior",
+    "paper_revision_round2/analyses/objectives/fit_seeds.py",
+    "paper_revision_round2/analyses/objectives/locked_predictions.csv"
+  ],
+  "test_labels_read": false,
+  "parameters": {
+    "objective": "cross_entropy",
+    "verbosity": -1,
+    "num_threads": 2,
+    "num_leaves": 15,
+    "learning_rate": 0.05,
+    "min_data_in_leaf": 12,
+    "feature_fraction": 0.7,
+    "seed": 20261120,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "seed_values": [
+    20261120,
+    20261121,
+    20261122,
+    20261123,
+    20261124
+  ],
+  "effective_feature_fraction_seeds": {
+    "20261120": 24359,
+    "20261121": 15654,
+    "20261122": 6949,
+    "20261123": 31013,
+    "20261124": 22308
+  },
+  "lightgbm_version": "4.6.0"
+}

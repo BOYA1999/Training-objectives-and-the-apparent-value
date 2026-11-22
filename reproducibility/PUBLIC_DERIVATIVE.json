@@ -1,0 +1,24 @@
+{
+  "derivative_created": "2026-11-22",
+  "distribution_status": "Public distribution derivative; not the original frozen archive",
+  "original_archive_filename": "Reproducibility_Round2.zip",
+  "original_archive_sha256": "d3afa19146ac8d8279aaf2a170a4b62347e9a2d681d7647047243469d5759c9f",
+  "original_prediction_lock_sha256": "77eacc0e094d636e4d40d9cc206bd08a3489df57a4530d88d0ba3f0bb56de5b9",
+  "public_prediction_lock_sha256": "bc9c064ee2c36175754274cf4292423da52f5e3e77b19dcea69c744822763fbc",
+  "path_metadata_changes": {
+    "original_entries": 113,
+    "generated_cache_read_entries_omitted": 92,
+    "retained_source_project_relative_entries": 21
+  },
+  "prediction_score_sha256": "6660151f6bdb7ab2ba321aa5cd6657a6eabda18f00509b8d379228652aef694c",
+  "unchanged_fields": "Every original prediction-lock field except project_read_paths is unchanged.",
+  "unchanged_scientific_payloads": "All original files except README.md, FILE_MANIFEST.csv and objectives/prediction_lock.json remain byte-identical.",
+  "original_replay_script_sha256": "1bea80e3f84cdf9b7bd73cce66f1a07333b293c1712a0444b64abfafb674191d",
+  "changes": [
+    "Normalized remaining historical read paths to source-project-relative paths.",
+    "Omitted generated-cache read entries; no cache files were in the original ZIP.",
+    "Rewrote README to describe frozen-result replay and public derivative scope.",
+    "Added this provenance file and regenerated FILE_MANIFEST.csv."
+  ],
+  "original_lock_included": false
+}

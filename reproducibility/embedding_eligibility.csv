@@ -1,0 +1,9 @@
+endpoint,representation,split,analysis_rows,embedding_ok,embedding_unavailable,handling
+cyp2c9,Mol2Mol,test,750,750,0,Retained; unavailable embedding coordinates are NaN; conventional features remain available
+cyp2c9,Mol2Mol,train,1285,1284,1,Retained; unavailable embedding coordinates are NaN; conventional features remain available
+cyp2c9,ChemGPT,test,750,717,33,Retained; unavailable embedding coordinates are NaN; conventional features remain available
+cyp2c9,ChemGPT,train,1285,1145,140,Retained; unavailable embedding coordinates are NaN; conventional features remain available
+pxr,Mol2Mol,test,513,513,0,Retained; unavailable embedding coordinates are NaN; conventional features remain available
+pxr,Mol2Mol,train,2191,2187,4,Retained; unavailable embedding coordinates are NaN; conventional features remain available
+pxr,ChemGPT,test,513,491,22,Retained; unavailable embedding coordinates are NaN; conventional features remain available
+pxr,ChemGPT,train,2191,1963,228,Retained; unavailable embedding coordinates are NaN; conventional features remain available

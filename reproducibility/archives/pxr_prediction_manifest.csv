@@ -1,0 +1,4 @@
+team,fixed_url,commit_utc,sha256
+bloomingdale,https://github.com/PeterBloomingdale/openadmet-pxr/blob/f116a69102e79677bc1d1d2e16b1c4f19d1ba839/submissions/phase2/final_submission.csv,2026-07-01T16:04:00Z,3c722d62f28c515bc160ebfeaa387e9cba4aa2e8a7516f5bf368aac615fcbcb2
+gashaw,https://github.com/gashawmg/openadmet-pxr-pec50-challenge/blob/3fa217eada0ec48f4489cab78a47726476f098f0/submission_final_v2.csv,2026-06-28T15:44:47Z,6b9f13f5787fae1dd6c57d68a1611ddf41e6dae493811db061e803b430ab1bf6
+saglam,https://github.com/ASinanSaglam/OpenADMET_PXR_challenge/blob/03fb216f0e1f283f691ca1d889b445eef2c9f10c/submission.csv,2026-06-25T21:50:53Z,9b0037e42e0b6555604811f186c6538c75923c69f87561b6fe79367957fdf66f

@@ -1,0 +1,21 @@
+{
+  "locked_utc": "2026-11-20T23:55:26.013335+00:00",
+  "sha256": {
+    "protocol.json": "fa9c1bd4e9747fdc7d92f9b636817644f28d92c49e578b0bd2b41f8417cd4cb4",
+    "fit/locked_predictions.csv": "f56ed235bc97dcfc04b54c1e3522cf560bebf579c8a5b2b713aa2f05852a3872",
+    "fit/prediction_lock.json": "3b76da72cdf3011691b086a8a51f9589d2b1e798d59e645b7d106d9b0c6cf6f5",
+    "evaluation/summary.json": "a0162a0fe1cf7f41469fd0c84417c0e9b66f1262bae9d020daea1a94152da84c",
+    "adjudication_qc.json": "bc749d9ea53fde56de3bf560935366813d86a19a67d1a59c1a2b5764ee859e55",
+    "repaired/adjudicate_v2.py": "837e16e2db8e83483bda9eefc2d11c6f3070449d56273f1e82d51abb8affefed",
+    "repaired/evaluate_v2.py": "448ced6223de864cd88643e4631970c11fb41085955ae358c8bd1899901cd670",
+    "repaired/decoder_note.md": "a5e6e2cd53b507b71e6fdbbbcdbe162e6032d7c553a8e0c78061a42314912713"
+  },
+  "public_release_derivation": {
+    "release": "2026-11-22",
+    "kind": "derived dependency manifest, not the original historical repair lock",
+    "original_repair_lock_sha256": "a4e9919bd830a5dddc5168dc774c6ad30a4bfbb600396dd113c1c52e3a28ec0b",
+    "historical_prediction_lock_sha256": "d9b003731e022a6251f80ec07a7c016972904dc5411dc53ec95e298798cdb320",
+    "updated_dependency": "fit/prediction_lock.json",
+    "reason": "public-release path sanitization; scientific inputs and outputs unchanged"
+  }
+}

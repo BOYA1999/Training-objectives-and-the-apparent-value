@@ -1,0 +1,378 @@
+{
+  "locked_utc": "2026-11-20T23:51:39.718822+00:00",
+  "sha256": "f56ed235bc97dcfc04b54c1e3522cf560bebf579c8a5b2b713aa2f05852a3872",
+  "rows": 22140,
+  "score_columns": [
+    "FP_point_l1",
+    "Mol2Mol_point_l1",
+    "ChemGPT_point_l1",
+    "FP_point_l2",
+    "Mol2Mol_point_l2",
+    "ChemGPT_point_l2",
+    "FP_interval",
+    "Mol2Mol_interval",
+    "ChemGPT_interval"
+  ],
+  "elapsed_seconds": 111.10366419999627,
+  "coverage": {
+    "Mol2Mol": {
+      "seconds": 35.158315300010145,
+      "counts": {
+        "test/ok": 4120,
+        "test/out_of_vocabulary": 303,
+        "test/over_max_sequence_length": 5,
+        "train/ok": 1284,
+        "train/out_of_vocabulary": 1
+      }
+    },
+    "ChemGPT": {
+      "seconds": 33.12588079999841,
+      "counts": {
+        "test/ok": 3986,
+        "test/unknown_token": 442,
+        "train/ok": 1145,
+        "train/unknown_token": 140
+      }
+    }
+  },
+  "timings": [
+    {
+      "seed": 20261120,
+      "model": "FP_point_l1",
+      "seconds": 0.22583450000092853,
+      "features": 3082
+    },
+    {
+      "seed": 20261120,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.9444186000037007,
+      "features": 3338
+    },
+    {
+      "seed": 20261120,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.676290000003064,
+      "features": 3210
+    },
+    {
+      "seed": 20261120,
+      "model": "FP_point_l2",
+      "seconds": 0.20054180000443012,
+      "features": 3082
+    },
+    {
+      "seed": 20261120,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.6647512999916216,
+      "features": 3338
+    },
+    {
+      "seed": 20261120,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.6316202999878442,
+      "features": 3210
+    },
+    {
+      "seed": 20261120,
+      "model": "FP_interval",
+      "seconds": 0.203684100008104,
+      "features": 3082
+    },
+    {
+      "seed": 20261120,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.7657401000033133,
+      "features": 3338
+    },
+    {
+      "seed": 20261120,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6511494000005769,
+      "features": 3210
+    },
+    {
+      "seed": 20261121,
+      "model": "FP_point_l1",
+      "seconds": 0.20314899999357294,
+      "features": 3082
+    },
+    {
+      "seed": 20261121,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.8046366999915335,
+      "features": 3338
+    },
+    {
+      "seed": 20261121,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.7013860000006389,
+      "features": 3210
+    },
+    {
+      "seed": 20261121,
+      "model": "FP_point_l2",
+      "seconds": 0.20335589999740478,
+      "features": 3082
+    },
+    {
+      "seed": 20261121,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.6562147000076948,
+      "features": 3338
+    },
+    {
+      "seed": 20261121,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.6506771999993362,
+      "features": 3210
+    },
+    {
+      "seed": 20261121,
+      "model": "FP_interval",
+      "seconds": 0.2117695999913849,
+      "features": 3082
+    },
+    {
+      "seed": 20261121,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.8440029000048526,
+      "features": 3338
+    },
+    {
+      "seed": 20261121,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6465526000101818,
+      "features": 3210
+    },
+    {
+      "seed": 20261122,
+      "model": "FP_point_l1",
+      "seconds": 0.20309929999348242,
+      "features": 3082
+    },
+    {
+      "seed": 20261122,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.9629230999998981,
+      "features": 3338
+    },
+    {
+      "seed": 20261122,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.6938105000008363,
+      "features": 3210
+    },
+    {
+      "seed": 20261122,
+      "model": "FP_point_l2",
+      "seconds": 0.20326639999984764,
+      "features": 3082
+    },
+    {
+      "seed": 20261122,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.669558199995663,
+      "features": 3338
+    },
+    {
+      "seed": 20261122,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.6301546999893617,
+      "features": 3210
+    },
+    {
+      "seed": 20261122,
+      "model": "FP_interval",
+      "seconds": 0.20231970000895672,
+      "features": 3082
+    },
+    {
+      "seed": 20261122,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.8317305999953533,
+      "features": 3338
+    },
+    {
+      "seed": 20261122,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6562625999940792,
+      "features": 3210
+    },
+    {
+      "seed": 20261123,
+      "model": "FP_point_l1",
+      "seconds": 0.20697199999995064,
+      "features": 3082
+    },
+    {
+      "seed": 20261123,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.8973276000033366,
+      "features": 3338
+    },
+    {
+      "seed": 20261123,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.6865932000073371,
+      "features": 3210
+    },
+    {
+      "seed": 20261123,
+      "model": "FP_point_l2",
+      "seconds": 0.19377759999770205,
+      "features": 3082
+    },
+    {
+      "seed": 20261123,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.6925904999952763,
+      "features": 3338
+    },
+    {
+      "seed": 20261123,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.6436799999937648,
+      "features": 3210
+    },
+    {
+      "seed": 20261123,
+      "model": "FP_interval",
+      "seconds": 0.19958390000101645,
+      "features": 3082
+    },
+    {
+      "seed": 20261123,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.7664643000025535,
+      "features": 3338
+    },
+    {
+      "seed": 20261123,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6679889999941224,
+      "features": 3210
+    },
+    {
+      "seed": 20261124,
+      "model": "FP_point_l1",
+      "seconds": 0.2096738000109326,
+      "features": 3082
+    },
+    {
+      "seed": 20261124,
+      "model": "Mol2Mol_point_l1",
+      "seconds": 1.9240072999964468,
+      "features": 3338
+    },
+    {
+      "seed": 20261124,
+      "model": "ChemGPT_point_l1",
+      "seconds": 0.6903582999948412,
+      "features": 3210
+    },
+    {
+      "seed": 20261124,
+      "model": "FP_point_l2",
+      "seconds": 0.19851780000317376,
+      "features": 3082
+    },
+    {
+      "seed": 20261124,
+      "model": "Mol2Mol_point_l2",
+      "seconds": 1.8548193000024185,
+      "features": 3338
+    },
+    {
+      "seed": 20261124,
+      "model": "ChemGPT_point_l2",
+      "seconds": 0.7059886999923037,
+      "features": 3210
+    },
+    {
+      "seed": 20261124,
+      "model": "FP_interval",
+      "seconds": 0.20771550000063144,
+      "features": 3082
+    },
+    {
+      "seed": 20261124,
+      "model": "Mol2Mol_interval",
+      "seconds": 1.826069800008554,
+      "features": 3338
+    },
+    {
+      "seed": 20261124,
+      "model": "ChemGPT_interval",
+      "seconds": 0.6693296000012197,
+      "features": 3210
+    }
+  ],
+  "project_read_paths": [
+    "research_project/cycle06/cyp2c9/early_labels.csv",
+    "research_project/cycle06/cyp2c9/structures.csv",
+    "research_project/cycle06/fit.py",
+    "research_project/cycle06/fit_continuous.py",
+    "research_project/cycle06_model/frozen_encoder.py",
+    "research_project/cycle07_model/checkpoint/config.json",
+    "research_project/cycle07_model/checkpoint/pytorch_model.bin",
+    "research_project/cycle07_model/frozen_chemgpt.py",
+    "research_project/cycle07_model/vendor/selfies/__init__.py",
+    "research_project/cycle07_model/vendor/selfies/decoder.py",
+    "research_project/cycle07_model/vendor/selfies/encoder.py",
+    "research_project/cycle07_model/vendor/selfies/grammar_rules.py",
+    "research_project/cycle07_model/vendor/selfies/kekulize.py",
+    "research_project/cycle07_model/vendor/selfies/utils.py",
+    "research_project/cycle09/fit_point_control.py",
+    "research_project/cycle10/external_structures.csv",
+    "research_project/cycle10/fit/locked_predictions.csv",
+    "research_project/cycle10/protocol.json",
+    "research_project/cycle10/scripts/fit_external.py",
+    "research_project/cycle10/structure_qc.json",
+    "research_project/models_outputs/local_packages/xxhash-4.1.0.dist-info/METADATA",
+    "research_project/models_outputs/local_packages/xxhash-4.1.0.dist-info/entry_points.txt",
+    "research_project/models_outputs/local_packages/xxhash-4.1.0.dist-info/top_level.txt",
+    "research_project/models_outputs/mol2mol_similarity.prior"
+  ],
+  "test_labels_read": false,
+  "protocol_sha256": "fa9c1bd4e9747fdc7d92f9b636817644f28d92c49e578b0bd2b41f8417cd4cb4",
+  "parameters": {
+    "objective": "cross_entropy",
+    "verbosity": -1,
+    "num_threads": 2,
+    "num_leaves": 15,
+    "learning_rate": 0.05,
+    "min_data_in_leaf": 12,
+    "feature_fraction": 0.7,
+    "seed": 20261120,
+    "deterministic": true,
+    "force_col_wise": true
+  },
+  "seed_values": [
+    20261120,
+    20261121,
+    20261122,
+    20261123,
+    20261124
+  ],
+  "effective_feature_fraction_seeds": {
+    "20261120": 24359,
+    "20261121": 15654,
+    "20261122": 6949,
+    "20261123": 31013,
+    "20261124": 22308
+  },
+  "lightgbm_version": "4.6.0",
+  "public_release_derivation": {
+    "release": "2026-11-22",
+    "kind": "path-sanitized derivative, not the original historical lock",
+    "source_archive": "Tox21_Frozen_Replay.zip",
+    "source_archive_sha256": "f5bf7bca5c862fcebdc607d8cbd9e38024b304f88896d8d8ed80f27a12074cda",
+    "original_prediction_lock_sha256": "d9b003731e022a6251f80ec07a7c016972904dc5411dc53ec95e298798cdb320",
+    "path_namespace": "research_project/ identifies the original research tree; these are not repository file-location promises",
+    "only_historical_field_modified": "project_read_paths",
+    "path_entries_original": 116,
+    "path_entries_rewritten": 24,
+    "generated_cache_entries_removed": 92,
+    "preserved": "all score, protocol, model-parameter, timestamp and execution-result fields"
+  }
+}

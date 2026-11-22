@@ -1,0 +1,13 @@
+dataset,stage,input_n,excluded_or_collapsed_n,output_n,unit,rule_or_outcome,evidence
+CYP2C9,Released multi-assay training registry,4905,3620,1285,compounds,Missing all four CYP2C9 fields; no partially populated records,C1;C2
+CYP2C9,Continuous-regression training eligibility,1285,0,1285,compounds,Complete ordered point/bounds and valid unique FragmentParent isomeric identities; std available but not required by the regression setup,C1;M1
+CYP2C9,Fixed test candidate panel,750,0,750,compounds,96 supported hits / 612 non-hits / 42 indeterminate; all ranked; Top150 at 20%,C1;M1
+PXR,Released training to dose-window-eligible continuous training,4139,1948,2191,compounds,1945 intervals extend outside observed dose window; 3 lack matched raw-DRC windows; retain 60 threshold-straddling intervals,P1;P2;M1
+PXR,Earlier binary-neighbor training only,2191,60,2131,compounds,Remove 60 threshold-indeterminate labels; 49 hits and 2082 non-hits,P2;M2
+PXR,Local fixed-list evaluation,513,0,513,compounds,19 hits / 283 non-hits / 211 unknown; 177 outside-dose-window + 34 threshold-overlap; Top102,P2;M1
+PXR,Archived final-submission evaluation,513,253,260,compounds,Exclude already-released Phase 1 outcomes; Phase 2: 14 hits / 145 non-hits / 101 unknown; Top52,P1;P2;M3
+NCATS CYP2C9,Released structures to valid nonoverlapping SID records,5242,338,4904,substance IDs,3 invalid structures; 335 valid SIDs overlap connectivity of any of 4905 Octant training structures,N1;M4
+NCATS CYP2C9,Identity grouping,4904,140,4764,SID rows to unique identities,Collapse duplicate FragmentParent canonical isomeric identities; preserve all linked curves for outcome adjudication,M4
+NCATS CYP2C9,Full external candidate panel,4764,0,4764,analysis compounds,190 hits / 3625 non-hits / 949 unknown; Top952; 5276 linked curves are not independent compounds,N1;M4
+NCATS CYP2C9,Finite-potency sensitivity: qualified curves,1914,7,1907,curves,6 ambiguous excluded-point masks; 1 fitted AC50 beyond measured maximum; both rules use experimental files only,M5
+NCATS CYP2C9,Finite-potency sensitivity: same-cohort comparison,4764,2999,1765,analysis compounds,At least one retained finite curve; 190 hits / 1534 non-hits / 41 unknown; Top353; median pIC50 per compound,M5

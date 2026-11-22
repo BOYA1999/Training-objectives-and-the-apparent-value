@@ -1,0 +1,13 @@
+source,date,revision,event,interpretation,evidence
+CYP,2026-11-05T01:55:55.000Z,53cf6cc6b2c593359d2802a4710046663d7a43e7,Unblind activity data,"File repository event, not experiment date",cycle05_data/HF_commits.json
+CYP,2026-08-06T20:25:31.000Z,85f8b358d0a2056a98b990dd75d3b3ec9247862b,Replace cyp-challenge-TRAIN_Emax.csv with dimensionless EmaxVsPosCtrl parameters,"File repository event, not experiment date",cycle05_data/HF_commits.json
+CYP,2026-08-05T22:32:17.000Z,236031ed489e8f29c65397408b0428f144b146cc,Upload 6 files,"File repository event, not experiment date",cycle05_data/HF_commits.json
+CYP,2026-08-03T05:29:39.000Z,4eadf98e4900f850f377786b99254ff38037dae5,Upload training data,"File repository event, not experiment date",cycle05_data/HF_commits.json
+PXR,2026-09-28T20:26:32Z,ab88544adb2c77508b4a217ec2f8180a22643d3e,Upload DRC raw plot data,"File repository event, not experiment date",cycle02_data_b/pxr_dataset_commits.json
+PXR,2026-07-03T06:01:54Z,6c41d434c42d65f7579b0a4b95b45f59352ff34f,add phase 2 unblinded activity,"File repository event, not experiment date",cycle02_data_b/pxr_dataset_commits.json
+PXR,2026-05-27T11:16:46Z,19db5fd3167421217aabe49dfdf7cf4f3ef98a85,Upload pxr-challenge_TEST_PHASE_1_UNBLINDED.csv,"File repository event, not experiment date",cycle02_data_b/pxr_dataset_commits.json
+PXR,2026-04-09T08:49:57Z,78ad044bf16eb367ec91729e5b10b3745e563a7c,update training set for removed compounds and fixed CIs,"File repository event, not experiment date",cycle02_data_b/pxr_dataset_commits.json
+PXR,2026-03-31T23:52:04Z,c320ab14df0ed66a485b01839e9db8874f81509b,Stage data for blind challenge,"File repository event, not experiment date",cycle02_data_b/pxr_dataset_commits.json
+NCATS,2021-06-28,,Online publication,"Publication date, not experiment date",https://pubmed.ncbi.nlm.nih.gov/34183376/
+NCATS,2021-09,,Journal issue,"Publication date, not experiment date",https://pubmed.ncbi.nlm.nih.gov/34183376/
+CYP,2026-11-04,,Dataset-card date for unblinding,Card calendar date differs from UTC commit date; retain both,cycle05_data/README.md

@@ -1,0 +1,7 @@
+method_x,method_y,mae_x_minus_y,observed_hit_x_minus_y,net_lower,net_upper,strict_metric_hit_reversal,unknown_allows_tie
+cont_fp_point,cont_fp_interval,0.023869253054866313,3,-34,35,True,True
+cont_fp_point,mol2mol,-0.056161318283165174,12,-34,60,False,True
+cont_fp_point,chemgpt,0.012051487427590102,3,-32,40,True,True
+cont_fp_interval,mol2mol,-0.08003057133803149,9,-36,61,False,True
+cont_fp_interval,chemgpt,-0.011817765627276211,0,-26,33,False,True
+mol2mol,chemgpt,0.06821280571075528,-9,-58,40,False,True

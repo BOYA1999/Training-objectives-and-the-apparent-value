@@ -1,0 +1,27 @@
+[
+  {
+    "url": "https://github.com/PeterBloomingdale/openadmet-pxr/blob/f116a69102e79677bc1d1d2e16b1c4f19d1ba839/submissions/phase2/final_submission.csv",
+    "matches_checksum": true,
+    "status": 200
+  },
+  {
+    "url": "https://github.com/gashawmg/openadmet-pxr-pec50-challenge/blob/3fa217eada0ec48f4489cab78a47726476f098f0/submission_final_v2.csv",
+    "matches_checksum": true,
+    "status": 200
+  },
+  {
+    "url": "https://github.com/ASinanSaglam/OpenADMET_PXR_challenge/blob/03fb216f0e1f283f691ca1d889b445eef2c9f10c/submission.csv",
+    "matches_checksum": true,
+    "status": 200
+  },
+  {
+    "url": "https://github.com/Scigantic/open-admet-challenge-cyp/blob/250a6260a310ee70a1a9d716a2b60a35a8d9a9d4/data/submissions/R25.csv",
+    "matches_checksum": true,
+    "status": 200
+  },
+  {
+    "url": "https://github.com/gashawmg/CYP-challenge/blob/08743059af5e69d99e378243fed2370947ce26c0/artifacts/submission_splice1a2.csv",
+    "matches_checksum": true,
+    "status": 200
+  }
+]

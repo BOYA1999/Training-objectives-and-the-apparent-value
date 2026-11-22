@@ -1,0 +1,58 @@
+{
+  "release": "2026-11-22",
+  "source_archive": "Tox21_Frozen_Replay.zip",
+  "source_archive_sha256": "f5bf7bca5c862fcebdc607d8cbd9e38024b304f88896d8d8ed80f27a12074cda",
+  "historical_archive_member_sha256": {
+    "protocol.json": "fa9c1bd4e9747fdc7d92f9b636817644f28d92c49e578b0bd2b41f8417cd4cb4",
+    "structure_qc.json": "fa7f35d24c4e92891794e0a0a958926258a1a13f23479745f8b7be594cf7cc0c",
+    "fit/fit_plan.json": "882ffd6ff5c22aa9f281c306f24191bca05502e1589973bb5cd6d173fc9dd1cc",
+    "fit/prediction_lock.json": "d9b003731e022a6251f80ec07a7c016972904dc5411dc53ec95e298798cdb320",
+    "fit/locked_predictions.csv": "f56ed235bc97dcfc04b54c1e3522cf560bebf579c8a5b2b713aa2f05852a3872",
+    "fit/Mol2Mol_coverage.csv": "00a49be1d894bcd9cdcca8a84ebdd58139f835ffa60ce7c73788b2598c753118",
+    "fit/ChemGPT_coverage.csv": "b700042a60c64d60c9297c945ef255eb5e71f6704f4ba7c01816f7a623ca6127",
+    "evaluation/summary.json": "a0162a0fe1cf7f41469fd0c84417c0e9b66f1262bae9d020daea1a94152da84c",
+    "adjudication_qc.json": "bc749d9ea53fde56de3bf560935366813d86a19a67d1a59c1a2b5764ee859e55",
+    "repaired/decoder_note.md": "a5e6e2cd53b507b71e6fdbbbcdbe162e6032d7c553a8e0c78061a42314912713",
+    "repaired/repair_lock.json": "a4e9919bd830a5dddc5168dc774c6ad30a4bfbb600396dd113c1c52e3a28ec0b",
+    "repaired/adjudication_qc.json": "325028ebd68c9294df71c83c1c2ba985cabcdaa858096f7fe9b2bd7d74a87e9d",
+    "repaired/external_outcomes.csv": "2992f3d1c17447c43b58b07bbd0e4365b3ed656d832fd5dd0bb87d6484906b07",
+    "repaired/evaluation/summary.json": "c4b029c332cc8340f0805c4f431887aa646151695da09823ef29736ed2c00bd9",
+    "repaired/evaluation/cells.csv": "24583f52bfd0ab980307241b535108b568d1ffb48eaa6ac380d0580976a30e0d",
+    "repaired/evaluation/contrasts.csv": "9f22b754a39c74bb571c5b875d46b879ce3866bed71c145fa7dcbddb48ce0c07",
+    "repaired/evaluation/replication.csv": "d0c697b669cb634e603ad2d481e18ba29d079c4b3956f8131b655b0259ddc7d0",
+    "repaired/evaluation/seed_summary.csv": "5fd9003a893ae95f1e7e1405708c0b9ef3db8b56ba01d4a47626b3532b36d0f1",
+    "repaired/evaluation/primary_scaffold_intervals.csv": "976729bb07c8974a21ce739c567f7c06251c16dc158108d517730ea0ea86e29a",
+    "README.md": "e17cc5da40c53a6999af2672b63824c4b20b0d0a06e125b59337b1d96adc33b3",
+    "replay_tox21.py": "48e6711f3e7421deabdc5b2167d72426c283d7c20c60d9dd8e3befb845ad45bd"
+  },
+  "original_archive_manifest_sha256": "cbc0ca9a238238bdb1bb35971029a78f80c9eae0092e3ca1df9b7b0bfab5e6d4",
+  "added_unchanged_source_files": {
+    "scripts/adjudicate.py": "03a7ac91e6bd50129d9c3f30ebe9c17ff0d18551ce8c95802faa4b440f845bde",
+    "scripts/evaluate_external.py": "2be1e57fd4f582910cfbbc0ea71857a2b8056c5bfc32d421c49f25158dd077ed",
+    "repaired/adjudicate_v2.py": "837e16e2db8e83483bda9eefc2d11c6f3070449d56273f1e82d51abb8affefed",
+    "repaired/evaluate_v2.py": "448ced6223de864cd88643e4631970c11fb41085955ae358c8bd1899901cd670"
+  },
+  "modified_historical_files": [
+    "README.md",
+    "SHA256.json",
+    "fit/prediction_lock.json",
+    "repaired/repair_lock.json"
+  ],
+  "original_absolute_paths_published": false,
+  "original_archive_included": false,
+  "raw_assay_exports_included": false,
+  "model_weights_included": false,
+  "scientific_data_modified": false,
+  "added_adapted_source_files": {
+    "scripts/fit_external.py": {
+      "original_sha256": "f043e86462619811c094a7a57d01d75c062ebaecc9fe35e7e77b1777e712b108",
+      "public_sha256": "7e981c428e6a8d8fb493ec06526f08a53beedacfa2452fa9daf80ea7b671dd6a",
+      "changes": "repository-layout paths only; fit audit also records repository-relative read identifiers instead of local absolute paths"
+    },
+    "scripts/prepare_registry.py": {
+      "original_sha256": "45d0282000e628e8cb58cb17ce84306a46848b732e76302b079ac4e274a18dc9",
+      "public_sha256": "77061035b5bf932d3acf8f09287282f38deef2f03f806d980d484075c6089510",
+      "changes": "repository-layout paths only; fit audit also records repository-relative read identifiers instead of local absolute paths"
+    }
+  }
+}
