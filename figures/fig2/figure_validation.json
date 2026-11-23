@@ -1,0 +1,50 @@
+{
+  "data_rows": 180,
+  "cases": 2,
+  "individual_candidates": 4,
+  "methods": [
+    "FP_point_l1",
+    "Mol2Mol_point_l1",
+    "ChemGPT_point_l1",
+    "FP_point_l2",
+    "Mol2Mol_point_l2",
+    "ChemGPT_point_l2",
+    "FP_interval",
+    "Mol2Mol_interval",
+    "ChemGPT_interval"
+  ],
+  "primary_seed": 20261120,
+  "other_seeds": [
+    20261121,
+    20261122,
+    20261123,
+    20261124
+  ],
+  "slots": 150,
+  "candidate_pool": 750,
+  "all_selection_and_primary_rank_checks": "PASS",
+  "rank_axis_max": 550,
+  "rdkit": "2026.03.3",
+  "matplotlib": "3.10.8",
+  "input_sha256": {
+    "late_labels.csv": "48857d32f786b52f043509687b5b2343e4c8408810b36569d3712208ed96acfc",
+    "locked_predictions.csv": "6660151f6bdb7ab2ba321aa5cd6657a6eabda18f00509b8d379228652aef694c",
+    "selection.json": "6ebb8021d60ac437720a82d9be8695cb0ec09d892ffdb0c72d7d699024d6f534"
+  },
+  "layout_reference": "Horwood et al. 2026, Fig. 6, doi:10.1038/s41467-026-79240-y",
+  "no_diffusion_trajectories_or_density_estimates": true,
+  "vector_SVG_including_all_four_molecules": true,
+  "PDF_page_count": 1,
+  "PDF_raster_image_objects": 0,
+  "TIFF_pixels": [
+    4320,
+    4800
+  ],
+  "TIFF_dpi": [
+    600,
+    600
+  ],
+  "TIFF_mode": "RGB",
+  "category_labels_correct": true,
+  "primary_and_secondary_selection_flags_checked": true
+}

@@ -27,6 +27,16 @@ At seed 20261120 and 885 slots, all 12 corrected comparisons under the primary, 
 
 The full NCATS and Tox21 catalogues leave the cross-catalogue effect uncertain. The results concern retrospective in vitro signal recovery, rather than prospective assay yield or clinical drug-interaction risk.
 
+## Figure 2
+
+[Code and source data](figures/fig2/) show four shortlist boundary cases across nine feature–objective configurations and five fitted seeds. In the complete FP lists at seed 20261120, absolute-to-squared training replaces 33 of 150 entries (19 supported hits enter, four leave); squared-to-interval training replaces 13 (four enter, one leaves). These give the observed net gains of 15 and three.
+
+The four cases were selected post hoc, conditional on measured outcomes and proximity to the new FP selection boundary. They illustrate candidate-level changes and do not estimate average performance. Measured potency intervals and variation across fitted seeds are shown separately.
+
+The directory includes the unchanged prediction and label tables, case selection, 180 plotted records, code, package versions, caption and figure files. To redraw, copy `figures/fig2/` to a working folder and follow its [README](figures/fig2/README.md). Plotting requires the listed packages; it is separate from the standard-library replay checks above and does not refit models.
+
+![Figure 2 CYP2C9 shortlist boundary cases](figures/fig2/CYP2C9_Assay_Allocation_Cases.png)
+
 ## Files and checksums
 
 Computer-specific paths and cache entries were removed from metadata, and the affected manifests were updated. Scores, labels and result tables are unchanged. Each `PUBLIC_DERIVATIVE.json` records the original checksums and the changes made for sharing. The edited locks differ from the preserved historical locks.

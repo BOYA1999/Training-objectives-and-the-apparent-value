@@ -1,0 +1,444 @@
+{
+  "selection_scope": "All 750 candidates; primary seed 20261120; top150 per method.",
+  "rule": "For each adjacent FP objective change, choose among newly selected supported hits the greatest numerical new-objective rank (nearest 150 from inside), and among removed supported below-threshold compounds the smallest numerical new-objective rank (nearest 150 from outside). Tie-break by identity SHA256. No augmented-model predictions or performance and no molecular similarity are used for selection. Each compound is a separate boundary illustration, not a real one-to-one reallocation.",
+  "cases": [
+    {
+      "before_method": "FP_point_l1",
+      "after_method": "FP_point_l2",
+      "before_hits": 50,
+      "after_hits": 65,
+      "entered_count": 33,
+      "removed_count": 33,
+      "entered_labels": {
+        "hit": 19,
+        "low": 8,
+        "unresolved": 6
+      },
+      "removed_labels": {
+        "hit": 4,
+        "low": 28,
+        "unresolved": 1
+      },
+      "candidate_hit_count": 19,
+      "candidate_low_count": 28,
+      "selected_hit_id": "OCNT-2535433",
+      "selected_low_id": "OCNT-2535751",
+      "illustrative_pair_tanimoto": 0.13095238095238096,
+      "compounds": {
+        "OCNT-2535433": {
+          "identity": "CC1(Cn2cc(-c3ccc4cnccc4c3)nn2)CC1(Cl)Cl",
+          "point": 6.27950821,
+          "lower": 6.18168275,
+          "upper": 6.37917125,
+          "hit": "1.0",
+          "primary_scores": {
+            "FP_point_l1": 5.1560885408091215,
+            "Mol2Mol_point_l1": 4.968045122782678,
+            "ChemGPT_point_l1": 5.058685931478429,
+            "FP_point_l2": 5.433014131590086,
+            "Mol2Mol_point_l2": 5.256518401888622,
+            "ChemGPT_point_l2": 5.298512396936641,
+            "FP_interval": 5.548001573661314,
+            "Mol2Mol_interval": 5.2373916089842245,
+            "ChemGPT_interval": 5.392260186762033
+          },
+          "primary_ranks": {
+            "FP_point_l1": 188,
+            "Mol2Mol_point_l1": 234,
+            "ChemGPT_point_l1": 188,
+            "FP_point_l2": 150,
+            "Mol2Mol_point_l2": 175,
+            "ChemGPT_point_l2": 169,
+            "FP_interval": 135,
+            "Mol2Mol_interval": 194,
+            "ChemGPT_interval": 144
+          },
+          "selected_seed_count": {
+            "FP_point_l1": 0,
+            "Mol2Mol_point_l1": 1,
+            "ChemGPT_point_l1": 1,
+            "FP_point_l2": 3,
+            "Mol2Mol_point_l2": 4,
+            "ChemGPT_point_l2": 1,
+            "FP_interval": 5,
+            "Mol2Mol_interval": 4,
+            "ChemGPT_interval": 2
+          },
+          "seed_scores": {
+            "20261120": {
+              "FP_point_l1": 5.1560885408091215,
+              "Mol2Mol_point_l1": 4.968045122782678,
+              "ChemGPT_point_l1": 5.058685931478429,
+              "FP_point_l2": 5.433014131590086,
+              "Mol2Mol_point_l2": 5.256518401888622,
+              "ChemGPT_point_l2": 5.298512396936641,
+              "FP_interval": 5.548001573661314,
+              "Mol2Mol_interval": 5.2373916089842245,
+              "ChemGPT_interval": 5.392260186762033
+            },
+            "20261121": {
+              "FP_point_l1": 5.1040462471866705,
+              "Mol2Mol_point_l1": 5.07768707655401,
+              "ChemGPT_point_l1": 4.925820664154964,
+              "FP_point_l2": 5.424593369450427,
+              "Mol2Mol_point_l2": 5.552867325833573,
+              "ChemGPT_point_l2": 5.334422633537495,
+              "FP_interval": 5.666843003671044,
+              "Mol2Mol_interval": 5.3426677376435645,
+              "ChemGPT_interval": 5.289725267611235
+            },
+            "20261122": {
+              "FP_point_l1": 5.186112894072759,
+              "Mol2Mol_point_l1": 5.0953622993198024,
+              "ChemGPT_point_l1": 5.061052274749849,
+              "FP_point_l2": 5.4329372628542805,
+              "Mol2Mol_point_l2": 5.397656107648779,
+              "ChemGPT_point_l2": 5.250262299903445,
+              "FP_interval": 5.685344332258194,
+              "Mol2Mol_interval": 5.346207843121038,
+              "ChemGPT_interval": 5.430208926329779
+            },
+            "20261123": {
+              "FP_point_l1": 5.195307482807426,
+              "Mol2Mol_point_l1": 5.063437113799314,
+              "ChemGPT_point_l1": 5.1442371368258435,
+              "FP_point_l2": 5.461037516067333,
+              "Mol2Mol_point_l2": 5.627519436623292,
+              "ChemGPT_point_l2": 5.269270239945643,
+              "FP_interval": 5.634368846407587,
+              "Mol2Mol_interval": 5.332890238434908,
+              "ChemGPT_interval": 5.367389744330451
+            },
+            "20261124": {
+              "FP_point_l1": 5.1800708880282995,
+              "Mol2Mol_point_l1": 5.014182207016738,
+              "ChemGPT_point_l1": 5.004272733354559,
+              "FP_point_l2": 5.50950621190578,
+              "Mol2Mol_point_l2": 5.5865905170428825,
+              "ChemGPT_point_l2": 5.4445286966157065,
+              "FP_interval": 5.652594801675372,
+              "Mol2Mol_interval": 5.4120558360784,
+              "ChemGPT_interval": 5.370460237908131
+            }
+          }
+        },
+        "OCNT-2535751": {
+          "identity": "Cc1ccc(NS(=O)(=O)c2ccc(C(=O)NC(C)c3cccnc3)cc2)cc1C",
+          "point": 5.593407723,
+          "lower": 5.49604475,
+          "upper": 5.68968325,
+          "hit": "0.0",
+          "primary_scores": {
+            "FP_point_l1": 5.313421602230288,
+            "Mol2Mol_point_l1": 5.253119425100089,
+            "ChemGPT_point_l1": 5.355885026348063,
+            "FP_point_l2": 5.4186348973615175,
+            "Mol2Mol_point_l2": 5.271629610565697,
+            "ChemGPT_point_l2": 4.997651387128689,
+            "FP_interval": 5.421961175885368,
+            "Mol2Mol_interval": 5.404097605580633,
+            "ChemGPT_interval": 5.2104699420057505
+          },
+          "primary_ranks": {
+            "FP_point_l1": 101,
+            "Mol2Mol_point_l1": 70,
+            "ChemGPT_point_l1": 51,
+            "FP_point_l2": 156,
+            "Mol2Mol_point_l2": 170,
+            "ChemGPT_point_l2": 297,
+            "FP_interval": 169,
+            "Mol2Mol_interval": 126,
+            "ChemGPT_interval": 229
+          },
+          "selected_seed_count": {
+            "FP_point_l1": 5,
+            "Mol2Mol_point_l1": 5,
+            "ChemGPT_point_l1": 5,
+            "FP_point_l2": 2,
+            "Mol2Mol_point_l2": 0,
+            "ChemGPT_point_l2": 0,
+            "FP_interval": 0,
+            "Mol2Mol_interval": 5,
+            "ChemGPT_interval": 0
+          },
+          "seed_scores": {
+            "20261120": {
+              "FP_point_l1": 5.313421602230288,
+              "Mol2Mol_point_l1": 5.253119425100089,
+              "ChemGPT_point_l1": 5.355885026348063,
+              "FP_point_l2": 5.4186348973615175,
+              "Mol2Mol_point_l2": 5.271629610565697,
+              "ChemGPT_point_l2": 4.997651387128689,
+              "FP_interval": 5.421961175885368,
+              "Mol2Mol_interval": 5.404097605580633,
+              "ChemGPT_interval": 5.2104699420057505
+            },
+            "20261121": {
+              "FP_point_l1": 5.3287841451473925,
+              "Mol2Mol_point_l1": 5.3802762899161936,
+              "ChemGPT_point_l1": 5.27010380109201,
+              "FP_point_l2": 5.388929101603509,
+              "Mol2Mol_point_l2": 5.272997772902097,
+              "ChemGPT_point_l2": 5.161645091617503,
+              "FP_interval": 5.370028148906247,
+              "Mol2Mol_interval": 5.5218841125645195,
+              "ChemGPT_interval": 5.15230924183513
+            },
+            "20261122": {
+              "FP_point_l1": 5.34061420183046,
+              "Mol2Mol_point_l1": 5.338237678367759,
+              "ChemGPT_point_l1": 5.321899096497738,
+              "FP_point_l2": 5.532028034291402,
+              "Mol2Mol_point_l2": 5.178987460606155,
+              "ChemGPT_point_l2": 5.042049681603209,
+              "FP_interval": 5.266750284778205,
+              "Mol2Mol_interval": 5.403398560705185,
+              "ChemGPT_interval": 5.190570868927402
+            },
+            "20261123": {
+              "FP_point_l1": 5.379783208703426,
+              "Mol2Mol_point_l1": 5.310992862939688,
+              "ChemGPT_point_l1": 5.295655894403162,
+              "FP_point_l2": 5.400563510485639,
+              "Mol2Mol_point_l2": 5.27292523698414,
+              "ChemGPT_point_l2": 4.997311289450618,
+              "FP_interval": 5.29220736804316,
+              "Mol2Mol_interval": 5.457590892289133,
+              "ChemGPT_interval": 5.213789514190484
+            },
+            "20261124": {
+              "FP_point_l1": 5.3908727619091605,
+              "Mol2Mol_point_l1": 5.164704577312413,
+              "ChemGPT_point_l1": 5.264467891542307,
+              "FP_point_l2": 5.511136691292476,
+              "Mol2Mol_point_l2": 5.265718536222388,
+              "ChemGPT_point_l2": 4.943402077848013,
+              "FP_interval": 5.3598329582806326,
+              "Mol2Mol_interval": 5.42281745463156,
+              "ChemGPT_interval": 5.173822967513705
+            }
+          }
+        }
+      }
+    },
+    {
+      "before_method": "FP_point_l2",
+      "after_method": "FP_interval",
+      "before_hits": 65,
+      "after_hits": 68,
+      "entered_count": 13,
+      "removed_count": 13,
+      "entered_labels": {
+        "hit": 4,
+        "low": 7,
+        "unresolved": 2
+      },
+      "removed_labels": {
+        "hit": 1,
+        "low": 11,
+        "unresolved": 1
+      },
+      "candidate_hit_count": 4,
+      "candidate_low_count": 11,
+      "selected_hit_id": "OCNT-2535824",
+      "selected_low_id": "OCNT-2535670",
+      "illustrative_pair_tanimoto": 0.18055555555555555,
+      "compounds": {
+        "OCNT-2535824": {
+          "identity": "O=C(CC1CCCC1)NC1CCC(C(=O)Nc2ccncc2)CC1",
+          "point": 7.315896927,
+          "lower": 7.2185185,
+          "upper": 7.41043425,
+          "hit": "1.0",
+          "primary_scores": {
+            "FP_point_l1": 4.674455653914432,
+            "Mol2Mol_point_l1": 4.639118561137509,
+            "ChemGPT_point_l1": 4.488758285071059,
+            "FP_point_l2": 5.429442580496372,
+            "Mol2Mol_point_l2": 5.092122774362113,
+            "ChemGPT_point_l2": 4.95829313458672,
+            "FP_interval": 5.56610781837596,
+            "Mol2Mol_interval": 5.01851762331928,
+            "ChemGPT_interval": 4.8666630823932815
+          },
+          "primary_ranks": {
+            "FP_point_l1": 412,
+            "Mol2Mol_point_l1": 419,
+            "ChemGPT_point_l1": 509,
+            "FP_point_l2": 153,
+            "Mol2Mol_point_l2": 243,
+            "ChemGPT_point_l2": 312,
+            "FP_interval": 129,
+            "Mol2Mol_interval": 303,
+            "ChemGPT_interval": 376
+          },
+          "selected_seed_count": {
+            "FP_point_l1": 0,
+            "Mol2Mol_point_l1": 0,
+            "ChemGPT_point_l1": 0,
+            "FP_point_l2": 3,
+            "Mol2Mol_point_l2": 0,
+            "ChemGPT_point_l2": 0,
+            "FP_interval": 4,
+            "Mol2Mol_interval": 0,
+            "ChemGPT_interval": 0
+          },
+          "seed_scores": {
+            "20261120": {
+              "FP_point_l1": 4.674455653914432,
+              "Mol2Mol_point_l1": 4.639118561137509,
+              "ChemGPT_point_l1": 4.488758285071059,
+              "FP_point_l2": 5.429442580496372,
+              "Mol2Mol_point_l2": 5.092122774362113,
+              "ChemGPT_point_l2": 4.95829313458672,
+              "FP_interval": 5.56610781837596,
+              "Mol2Mol_interval": 5.01851762331928,
+              "ChemGPT_interval": 4.8666630823932815
+            },
+            "20261121": {
+              "FP_point_l1": 4.703475144118584,
+              "Mol2Mol_point_l1": 4.547787149559974,
+              "ChemGPT_point_l1": 4.417193736327414,
+              "FP_point_l2": 5.504784538717228,
+              "Mol2Mol_point_l2": 5.136808553966958,
+              "ChemGPT_point_l2": 5.145238747401217,
+              "FP_interval": 5.4715134692079825,
+              "Mol2Mol_interval": 5.0694259052884885,
+              "ChemGPT_interval": 4.983022595137625
+            },
+            "20261122": {
+              "FP_point_l1": 4.735042924527551,
+              "Mol2Mol_point_l1": 4.547981489020083,
+              "ChemGPT_point_l1": 4.585619560458831,
+              "FP_point_l2": 5.482556080473162,
+              "Mol2Mol_point_l2": 5.143281413188426,
+              "ChemGPT_point_l2": 5.048489091096598,
+              "FP_interval": 5.589144293773934,
+              "Mol2Mol_interval": 5.226679159432884,
+              "ChemGPT_interval": 4.9332742431236465
+            },
+            "20261123": {
+              "FP_point_l1": 4.821237771271265,
+              "Mol2Mol_point_l1": 4.581978384851913,
+              "ChemGPT_point_l1": 4.431885212731102,
+              "FP_point_l2": 5.359877559746369,
+              "Mol2Mol_point_l2": 5.063348559316528,
+              "ChemGPT_point_l2": 5.017999151824145,
+              "FP_interval": 5.533345635526955,
+              "Mol2Mol_interval": 5.098872769835355,
+              "ChemGPT_interval": 5.0767066814993544
+            },
+            "20261124": {
+              "FP_point_l1": 4.7942964741687435,
+              "Mol2Mol_point_l1": 4.617515233670813,
+              "ChemGPT_point_l1": 4.489599467110318,
+              "FP_point_l2": 5.4774194376801875,
+              "Mol2Mol_point_l2": 5.024835300850923,
+              "ChemGPT_point_l2": 4.8345350379871785,
+              "FP_interval": 5.56292580126119,
+              "Mol2Mol_interval": 5.055090858555008,
+              "ChemGPT_interval": 5.216907635419162
+            }
+          }
+        },
+        "OCNT-2535670": {
+          "identity": "CCC(C)C(NC(=O)c1ccncc1)c1nc2ccccc2[nH]1",
+          "point": 5.889635897,
+          "lower": 5.78794925,
+          "upper": 5.98856625,
+          "hit": "0.0",
+          "primary_scores": {
+            "FP_point_l1": 5.144645869264797,
+            "Mol2Mol_point_l1": 5.018538026787902,
+            "ChemGPT_point_l1": 5.165312708305385,
+            "FP_point_l2": 5.503878079999666,
+            "Mol2Mol_point_l2": 5.414060059270685,
+            "ChemGPT_point_l2": 5.190206749142117,
+            "FP_interval": 5.476267575317478,
+            "Mol2Mol_interval": 5.179657987400751,
+            "ChemGPT_interval": 5.1627803620576005
+          },
+          "primary_ranks": {
+            "FP_point_l1": 197,
+            "Mol2Mol_point_l1": 202,
+            "ChemGPT_point_l1": 128,
+            "FP_point_l2": 128,
+            "Mol2Mol_point_l2": 120,
+            "ChemGPT_point_l2": 217,
+            "FP_interval": 153,
+            "Mol2Mol_interval": 216,
+            "ChemGPT_interval": 251
+          },
+          "selected_seed_count": {
+            "FP_point_l1": 4,
+            "Mol2Mol_point_l1": 0,
+            "ChemGPT_point_l1": 3,
+            "FP_point_l2": 4,
+            "Mol2Mol_point_l2": 5,
+            "ChemGPT_point_l2": 2,
+            "FP_interval": 0,
+            "Mol2Mol_interval": 1,
+            "ChemGPT_interval": 0
+          },
+          "seed_scores": {
+            "20261120": {
+              "FP_point_l1": 5.144645869264797,
+              "Mol2Mol_point_l1": 5.018538026787902,
+              "ChemGPT_point_l1": 5.165312708305385,
+              "FP_point_l2": 5.503878079999666,
+              "Mol2Mol_point_l2": 5.414060059270685,
+              "ChemGPT_point_l2": 5.190206749142117,
+              "FP_interval": 5.476267575317478,
+              "Mol2Mol_interval": 5.179657987400751,
+              "ChemGPT_interval": 5.1627803620576005
+            },
+            "20261121": {
+              "FP_point_l1": 5.272562977169814,
+              "Mol2Mol_point_l1": 4.9464419646328865,
+              "ChemGPT_point_l1": 5.042548314424555,
+              "FP_point_l2": 5.504803947736248,
+              "Mol2Mol_point_l2": 5.421672344332963,
+              "ChemGPT_point_l2": 5.292847106027516,
+              "FP_interval": 5.4172340465639035,
+              "Mol2Mol_interval": 5.411200891461162,
+              "ChemGPT_interval": 5.3097824209420645
+            },
+            "20261122": {
+              "FP_point_l1": 5.281544343004494,
+              "Mol2Mol_point_l1": 5.052447189443911,
+              "ChemGPT_point_l1": 5.078160853962483,
+              "FP_point_l2": 5.5168361703311986,
+              "Mol2Mol_point_l2": 5.386351795762555,
+              "ChemGPT_point_l2": 5.315367115232364,
+              "FP_interval": 5.48714979963535,
+              "Mol2Mol_interval": 5.2770621889948375,
+              "ChemGPT_interval": 5.279383739356721
+            },
+            "20261123": {
+              "FP_point_l1": 5.290400169124947,
+              "Mol2Mol_point_l1": 5.05482190219126,
+              "ChemGPT_point_l1": 5.08360657494584,
+              "FP_point_l2": 5.44181799151117,
+              "Mol2Mol_point_l2": 5.517170873833999,
+              "ChemGPT_point_l2": 5.394349123021157,
+              "FP_interval": 5.415468690441091,
+              "Mol2Mol_interval": 5.22483567305724,
+              "ChemGPT_interval": 5.149408715854787
+            },
+            "20261124": {
+              "FP_point_l1": 5.251567232448235,
+              "Mol2Mol_point_l1": 5.058072529624294,
+              "ChemGPT_point_l1": 5.123277950855962,
+              "FP_point_l2": 5.353564127403577,
+              "Mol2Mol_point_l2": 5.398618847977389,
+              "ChemGPT_point_l2": 5.402073993317794,
+              "FP_interval": 5.410048014816369,
+              "Mol2Mol_interval": 5.266330787202437,
+              "ChemGPT_interval": 5.112129881078973
+            }
+          }
+        }
+      }
+    }
+  ]
+}
