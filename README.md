@@ -1,50 +1,30 @@
-# Training objectives and the apparent value of molecular embeddings in CYP2C9 assay prioritization
+# Reproduce the CYP2C9 analyses
 
-Code and saved results for comparing training objectives and frozen molecular embeddings at a fixed assay budget.
+## Replay the saved results
 
-## Run the checks
-
-With Python 3.10 or later:
+Use Python 3.10 or later. Clone the repository and run the verifier from its root.
 
 ```sh
+git clone https://github.com/BOYA1999/Training-objectives-and-the-apparent-value.git
+cd Training-objectives-and-the-apparent-value
 python verify_release.py
 ```
 
-No extra packages, weights or network access are needed. This checks file hashes and runs:
+The verifier checks the file hashes in `FILE_MANIFEST.csv` and runs the [Octant and NCATS replay](reproducibility/README.md) and the [corrected Tox21 replay](tox21/README.md). Both use the saved scores and assay labels. Look for three `PASS` lines. Once the files are local, the verifier runs offline with the Python standard library.
 
-- `reproducibility/`: Octant factorial, five-seed, endpoint/budget, archived-prediction and NCATS checks.
-- `tox21/`: five seeds, three label rules and four budgets—540 shortlist cells, 1,200 paired contrasts and 60 sign-pattern decisions.
+To use the version cited in the manuscript, run `git checkout 2577a441669101068d7c6d72ce6f58871964edb4` before running the verifier.
 
-The checks use saved scores and labels. Model fitting, embedding extraction, raw-curve adjudication and scaffold resampling require the inputs and software listed in [analysis_source/](analysis_source/README.md) and [tox21/](tox21/README.md). They are not rerun by this command.
+## Redraw the archived Figure 2
 
-## Results
+Copy `figures/fig2/` to a separate working directory. In that copy, use Python 3.12 and install the native Cairo library for CairoSVG, then run:
 
-For the enriched 750-compound Octant catalogue, conventional fingerprints and descriptors (FP) recovered 50, 65 and 68 supported hits in 150 slots under absolute-point, squared-point and interval objectives. Interval-trained Mol2Mol and ChemGPT models recovered 57 and 60. Their +7/+10 differences against absolute-point FP became −11/−8 against interval FP. These observations apply to the fitted workflow and measured catalogue.
+```sh
+python -m pip install -r requirements.txt
+python plot_allocation_cases.py
+```
 
-Tox21's initial decoder classified 0/482/3,946 candidates as supported hits/below threshold/unresolved; the corrected primary rule classified 17/2,668/1,743. The correction handles 15-position all-zero exclusion masks whose lengths differ from the visible doses. Non-activating records with mismatched nonzero masks provide no determinate evidence. The protocol file stayed unchanged; the adjudication code changed. Both versions failed the locally frozen criterion. They are two versions of one retrospective analysis, not independent replications or external preregistration.
+The script checks the case selection and ranks from the saved inputs, then writes the figure files, plotted CSV and validation report. See the [Figure 2 instructions](figures/fig2/README.md) for the files and dependencies.
 
-At seed 20261120 and 885 slots, all 12 corrected comparisons under the primary, CYP-only and three-record rules had negative observed differences; every paired finite-panel bound crossed zero. This finding is specific to that seed and budget. Under the primary rule, the two absolute-point comparisons opposed the expected positive direction. The two negative same-interval comparisons matched the expected direction, but their bounds also included zero. These bounds vary unresolved outcomes; they are not 95% confidence intervals and do not establish equivalence.
+## Work from upstream inputs
 
-The full NCATS and Tox21 catalogues leave the cross-catalogue effect uncertain. The results concern retrospective in vitro signal recovery, rather than prospective assay yield or clinical drug-interaction risk.
-
-## Figure 2
-
-[Code and source data](figures/fig2/) show four shortlist boundary cases across nine feature–objective configurations and five fitted seeds. In the complete FP lists at seed 20261120, absolute-to-squared training replaces 33 of 150 entries (19 supported hits enter, four leave); squared-to-interval training replaces 13 (four enter, one leaves). These give the observed net gains of 15 and three.
-
-The four cases were selected post hoc, conditional on measured outcomes and proximity to the new FP selection boundary. They illustrate candidate-level changes and do not estimate average performance. Measured potency intervals and variation across fitted seeds are shown separately.
-
-The directory includes the unchanged prediction and label tables, case selection, 180 plotted records, code, package versions, caption and figure files. To redraw, copy `figures/fig2/` to a working folder and follow its [README](figures/fig2/README.md). Plotting requires the listed packages; it is separate from the standard-library replay checks above and does not refit models.
-
-![Figure 2 CYP2C9 shortlist boundary cases](figures/fig2/CYP2C9_Assay_Allocation_Cases.png)
-
-## Files and checksums
-
-Computer-specific paths and cache entries were removed from metadata, and the affected manifests were updated. Scores, labels and result tables are unchanged. Each `PUBLIC_DERIVATIVE.json` records the original checksums and the changes made for sharing. The edited locks differ from the preserved historical locks.
-
-The Tox21 replay uses corrected labels. Initial-version records include summaries and quality-control results, but not a complete candidate-label table. `FILE_MANIFEST.csv` lists the release checksums. Raw assay exports and model weights are not included; their source links, versions and checksums are documented in the analysis directories.
-
-## Data and license
-
-Data: [OpenADMET CYP](https://doi.org/10.57967/hf/11464), [PXR](https://doi.org/10.57967/hf/9731), [NCATS AID 1645842](https://pubchem.ncbi.nlm.nih.gov/bioassay/1645842), [Tox21 CYP2C9 AID 1671198](https://pubchem.ncbi.nlm.nih.gov/bioassay/1671198) and the [firefly luciferase counterscreen AID 1224835](https://pubchem.ncbi.nlm.nih.gov/bioassay/1224835).
-
-Code is available under the [MIT license](LICENSE). Source data, participant predictions, model weights and upstream software retain their own licenses.
+For model fitting, embedding extraction, raw assay adjudication or scaffold resampling, follow the [analysis source guide](analysis_source/README.md) and the [Tox21 input and dependency notes](tox21/README.md). These steps require upstream files and dependencies in addition to this checkout.
